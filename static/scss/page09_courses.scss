@@ -1,0 +1,46 @@
+@import 'page00_skeleton';
+
+.page-title{
+    padding-top: 20vh;
+    height: 50vh;
+}
+
+.course{
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    @media (min-width: 768px){ 
+        flex-direction: row;
+    }
+
+    .course-img{
+        width: 100%;
+        height: auto;
+        // flex: content;
+
+        @media (min-width: 768px){ 
+            width: 40vw;
+        }
+    }
+
+    .course-desc{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+        flex: 6;
+    }
+
+    p{
+        // font-size: 1rem;
+    }
+
+}
+
+#pencil{
+    border: 1px solid black;
+}

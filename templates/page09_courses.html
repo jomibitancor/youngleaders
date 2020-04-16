@@ -1,0 +1,30 @@
+{% extends "page00_skeleton.html" %}
+{% block title %}Courses{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static',filename='page09_courses.css') }}">
+<div class="container-fluid">
+    <h1 class="page-title text-center">
+        Courses
+    </h1>
+</div>
+<div class="container-fluid">
+    <div class="course container">
+        <img class="img-fluid course-img" src="{{ url_for('static', filename='img/main/success-series.jpg') }}" alt="">
+        <div class="course-desc">
+            <h1 class="course-title raleway">Student Success FREE Video Series</h1>
+            <button class="btn btn-primary"><a target="_blank" href="https://forms.gle/7JxhKc2NMEYx7AEU9">Sign me up!</a>  </button>
+        </div>
+    </div>
+
+    <div class="course container">
+        <img src="{{ url_for('static', filename='img/events/pencil.png') }}" alt="" class="img-fluid course-img" id="pencil">
+        <div class="course-desc">
+            <h1 class="course-title raleway">Leadership is a Mindset Course</h1>
+            <p>Launching May 2020</p>
+            <button class="btn btn-primary"><a target="_blank" href="https://forms.gle/7JxhKc2NMEYx7AEU9">Sign me up!</a>  </button>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
