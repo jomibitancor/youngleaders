@@ -15,12 +15,15 @@
 
 <!-- INTRODUCTION -->
 <section id="introduction">
-    <div class="container py-4">
-        <div class="row">
-            <div class="col">
-                We know that YoungLeaders.World's leadership training can have a profound impact on lives. We want to hear how it has helped you in your journey. Please <a href="https://docs.google.com/forms/d/1Bd_NbUti9NdhutWv1ZbOmMiBcTM2tLwPR6m0j7rtN1Q/viewform?ts=5e5b0c78&edit_requested=true">let us know!</a> 
-            </div>
-        </div>
+    <div class="d-flex container py-4">
+        <img src="{{ url_for('static', filename='img/crowd.jpg') }}" alt="">
+        <p>
+            We know that YoungLeaders.World's leadership training can have a profound impact on lives. We want to hear how it has helped you in your journey.
+            <button class="btn btn-primary mx-auto mt-2">
+                <a class="raleway" href="https://docs.google.com/forms/d/1Bd_NbUti9NdhutWv1ZbOmMiBcTM2tLwPR6m0j7rtN1Q/viewform?ts=5e5b0c78&edit_requested=true">LET US KNOW</a>
+            </button>
+        </p> 
+        
     </div>
 </section>
 <!-- INTRODUCTION -->
@@ -29,10 +32,7 @@
 <section id="main">
     <div class="container">
         <div class="row py-5">
-            <div class="col-lg-7">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.4181108963608!2d-113.4572680842967!3d53.56815418002612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02245b7850ae3%3A0x931beafa1d55a8a9!2sEdmonton+Expo+Center%2C+Northlands+Expo!5e0!3m2!1sen!2sca!4v1563997243436!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            <div class="col-lg-5">
+            <div class="col-lg">
                 <h2 class="raleway">YoungLeaders.World Office</h2>
                 <p>Edmonton Expo Centre <br>
                     7515 118 Ave NW. Edmonton, Alberta Canada <br> T5B 0J2</p>
@@ -72,12 +72,14 @@
 <!-- BODY -->
 
 <!-- FAQS -->
-<section id="faq">
+<section class="py-5" id="faq">
     <div class="container">
         <h2>Frequently Asked Questions</h2>
         <hr>
+        <h3>For a list of FAQs - <a href="{{ url_for('static', filename='docs/FAQ.pdf') }}">click here</a>  </h3>
     </div>
-    <div class="container">
+    
+    <!-- <div class="container">
         <p class="question"><span class="Q">Q</span>What's the difference between Day 1 and Day 2 at Vision2020?</p>
         <p class="answer"><span class="A">A</span>Day 1, on April 7th, 2020, is a high-energy, high-impact event that costs $20 to attend and includes keynote speeches, a community organization-led IMPACT zone, live music, reflective work time, and more. Day 1 takes place in Hall D at the Edmonton Expo Centre. <br> Day 2, on April 8th, 2020, consists of small workshops in an intimate setting with the keynotes from Day 1. Day 2 costs $70, this includes a ticket to Day 1. </p>
         <hr style="width: 25%;" class="my-4">
@@ -99,7 +101,13 @@
         <p class="question"><span class="Q">Q</span>Can I attend if I am not in Grade 8-12?</p>
         <p class="answer"><span class="A">A</span>If you are a University student, a professional, parent, or anyone else above the age of 13, you're welcome to attend. This Summit is for all ages 13 and up.</p>
         <hr style="width: 25%;" class="my-4">
-    </div>
+    </div> -->
 </section>
 <!-- FAQS -->
+
+<div class="container-fluid">
+    <div class="container py-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.4181108963608!2d-113.4572680842967!3d53.56815418002612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a02245b7850ae3%3A0x931beafa1d55a8a9!2sEdmonton+Expo+Center%2C+Northlands+Expo!5e0!3m2!1sen!2sca!4v1563997243436!5m2!1sen!2sca" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
 {% endblock content %}
