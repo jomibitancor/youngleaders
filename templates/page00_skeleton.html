@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='page00_skeleton.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='libs/bootstrap.css')}}" >
+    <link rel="stylesheet" href="{{url_for('static', filename='libs/animate.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='libs/glider.min.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='libs/swiper.min.css')}}">
+    <script type="text/javascript" src="{{url_for('static', filename='libs/swiper.min.js')}}"></script>
+    <script src="{{url_for('static', filename='libs/wow.min.js')}}"></script>
+    <script src="https://kit.fontawesome.com/f1ab9365d8.js"></script>
+    <script>new WOW().init();</script>
+
+    <title>{% block title %}{% endblock title %} - YoungLeaders.World</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 2;">
+        <a class="navbar-brand" href="{{url_for('main')}}"><img width="75px" src="{{ url_for('static', filename='img/logos/ylwlogo.png') }}" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mx-auto">
+                
+                <a class="nav-item nav-link" href="{{ url_for('events') }}">Events</a>
+                <a class="nav-item nav-link" href="{{ url_for('videoresources') }}">Video Resources</a>
+                <a class="nav-item nav-link" href="{{ url_for('speakers') }}">Speakers</a>
+                <a class="nav-item nav-link" href="{{ url_for('waystogive') }}">Ways To Give</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{{ url_for('about') }}">About Us</a>
+                        <a class="dropdown-item" href="{{ url_for('opportunities') }}">Opportunities</a>
+                        <a class="dropdown-item" href="{{ url_for('contact') }}">Contact Us</a>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    {% block content %}
+    {% endblock content %}
+
+     <!-- FOOTER -->
+     <section id="footer" class="pt-2">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <div>
+                        YoungLeaders.World <br>
+                        <a style="color: #26B3BF;" href="mailto: info@youngleaders.world">info@youngleaders.world</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        YoungLeaders.World Office <br>
+                        Edmonton Expo Centre <br>
+                        7515 118 Ave NW. Edmonton, Alberta
+                        Canada T5B 0J2
+                    </div>
+                </div>
+                <div class="col">
+                    For Growth & Good.
+                    <div class="d-flex justify-content-center">
+                        <div class="p-2">
+                            <a style="color: #26B3BF;" href="https://www.facebook.com/youngleadersworldtour/" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="p-2">
+                            <a style="color: #26B3BF;" href="https://www.instagram.com/ylworld/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="p-2">
+                            <a style="color: #26B3BF;" href="https://twitter.com/ylworld" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center pt-2">
+                <div class="col">
+                    <p class="lead">
+                        &copy; 2019 YoungLeaders.World
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER(END) -->
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

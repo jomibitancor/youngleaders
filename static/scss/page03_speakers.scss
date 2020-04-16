@@ -1,0 +1,78 @@
+@import "page00_skeleton";
+
+#header{
+
+    .background-container{
+        background: #000 url(../static/img/stage_bg.gif) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        color: white;
+        position: relative;
+        z-index: 0;
+        background-attachment: fixed;
+        
+        .background-overlay{
+            background: black; 
+            opacity: 0.2;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }    
+}
+
+#speakers{
+    .speaker-container{
+        height: 1000px;
+        background: transparent;
+        
+        .speaker-description{
+            z-index: 2;
+            position: relative;
+            padding-top: 200px;
+        }
+    }
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+
+  #speakers{
+    #carla{
+      padding-top: 100px;
+      background-position-x: -300px !important;
+    }
+    #tyler{
+      padding-top: 300px;
+    }
+    #lauren{
+      padding-top: 10px;
+    }
+    #chris{
+      padding-top: 250px;
+    }
+    #josh{
+      padding-top: 100px;
+    }
+    #shayne{
+
+    }
+    #jer{
+      padding-top: 100px;
+    }
+    #gracie{
+      padding-top: 100px;
+    }
+    #stephen{
+      padding-top: 200px;
+    }
+    .speaker-container{
+      
+      .speaker-description{
+        padding-top: 20px;
+      }
+    }
+  }
+}

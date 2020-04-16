@@ -1,0 +1,333 @@
+{% extends "page00_skeleton.html" %}
+{% block title %}Main{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static',filename='page01_main.css')}}" />
+
+<section id="header">
+    <!--Don't delete. For JavaScript scroll animation-->
+</section>
+
+<!-- VIDEO -->
+<header id="v-header" class="container">
+    <div class="fullscreen-video-wrap">
+        <video loop muted="true">
+            <source src="{{ url_for('static',filename='img/VideoBackground.mp4') }}" type="video/mp4" />
+        </video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="header-container d-flex justify-content-center align-items-center">
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h1 id="quote1">For Growth & Good.</h1>
+                </div>
+                <div class="swiper-slide">
+                    <h1 id="quote2">Leadership is a mindset, not a status.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--VIDEO END -->
+
+<div class="d-flex py-5 container-fluid justify-content-center flex-column align-items-center">
+    <h1 class=" raleway text-center">COVID message from our Executive Director, Carla Cuglietta</h1>
+    <div class="py-3 container embed-responsive embed-responsive-16by9">
+        <iframe class="pb-5 embed-responsive-item" src="https://www.youtube.com/embed/5lCXvjyjKCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <img width="1000" height="auto" id="success-series" src="{{ url_for('static', filename='img/main/success-series.jpg') }}" alt="" class="img-fluid">
+    <h1 class="py-2 roboto text-center">Free Video Series starting on April 20, 2020</h1>
+    <button class="btn btn-primary"><a href="https://forms.gle/7JxhKc2NMEYx7AEU9">Register Now!</a> </button>
+</div>
+
+<!-- STATISTICS -->
+<section id="statistics" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1>
+                    For Young Leaders, <br> By Young Leaders
+                </h1>
+                <hr class="my-5">
+            </div>
+        </div>
+        <div class="row pt-3">
+            <p class="text-center">
+                We collaborate with young people around the world to help them discover life leadership. YL.W is
+                dedicated to helping young people, ages 13-21, understand how to develop a leader mindset. How to
+                think like a leader, make decisions like a leader and articulate your goals. We believe leadership
+                is a mindset, not a status.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                <div id="box-1" class="box">
+                    <div class="box-inner">
+                        <i class="fas fa-user-graduate fa-3x"></i>
+                        <h2 onscroll="" class="counter pt-0" >
+                            <span data-purecounter-start="9999" data-purecounter-end="11496" class="purecounter">0</span>
+                        </h2>
+                        <p class="pt-1">Student Leaders Trained</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div id="box-2" class="box">
+                    <div class="box-inner">
+                        <i class="fas fa-mountain fa-3x"></i>
+                        <h2 class="counter">
+                            <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-delay="200" class="purecounter">0</span>
+                        </h2>
+                        <p class="pt-2">Leadership Summits Executed</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div id="box-3" class="box">
+                    <div class="box-inner">
+                        <i class="fas fa-globe-americas fa-3x"></i>
+                        <h2 class="counter pt-0">
+                            <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-delay="150" class="purecounter">0</span>
+                        </h2>
+                        <p class="pt-2">Countries Accessing Our Resources</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- STATISTICS (END) -->
+
+<div class="my-5"></div>
+
+<section id="journey_ambassador_and_events" class="py-5">
+
+    <div class="my-5"></div>
+
+
+    <div class="container">
+        <div id="events-flex-container">
+            <div style="flex: 2;" class="events-flex-item">
+                <div id="ambassador-visit-img"></div>
+            </div>
+            <div style="flex: 2;" class="events-flex-item">
+                <h1 style="color:#1EA8B4;font-family: Raleway;font-size: 45px">Ambassador Visits</h1>
+                <p>
+                    Want to learn more about the leadership work that YL.W does? Want to find out more about upcoming Summits? Book a YoungLeaders.World student ambassador to come to your school for an assembly, classroom visit or school event. To find out more, fill in the information below.
+                    <p style="font-size: 16px;">
+                    *YoungLeaders.World ambassador visits are only available in the Capital Region of Alberta, Canada.
+                    </p>
+                </p>
+                <div class="d-flex justify-content-center">
+                    <div>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#ambassadorVisit">
+                            <div class="btn-text">BOOK</div>
+                        </button>
+                        <!-- AMBASSADOR VISIT FORM -->
+                        <div class="modal" id="ambassadorVisit" data-backdrop="false">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-center">Ambassador Visit</h5>
+                                        <button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="https://formspree.io/carla@youngleaders.world" method="POST">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input id="name" class="form-control" type="text" name="Name" placeholder="Name" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input id="email" class="form-control" type="email" name="Email" placeholder="Email" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input id="email" class="form-control" type="date" name="Preferred Date" placeholder="Preferred Date" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input type="text" id="city" class="form-control" name="City" placeholder="City" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input id="phone" class="form-control" type="text" name="School Name" placeholder="School Name" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <input list="level" class="form-control" name="Education Level" placeholder="Education Level">
+                                                        <datalist id="level">
+                                                            <option value="Elementary School"></option>
+                                                            <option value="Junior High School"></option>
+                                                            <option value="High School"></option>
+                                                            <option value="University"></option>
+                                                        </datalist>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <input type="text" id="number" class="form-control" name="Number Of People" placeholder="# of people">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <p>
+                                                    <span class="send-btn">
+                                                        <input id="btn" class="btn" type="submit" value="SEND" />
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- AMBASSADOR VISIT FORM -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="py-4"></div>
+
+</section>
+<!-- AMBASSADOR VISITS (END) -->
+
+<!-- PARTNERS -->
+<section id="partners" class="py-5">
+    <div class="container container-partners">
+        <div class="text-center">
+            <h1>YoungLeaders.World's Impact is made possible by</h1>
+            <hr class="my-5">
+        </div>
+        <div class="d-flex flex-wrap justify-content-center mt-4">
+            <div class="partner-container">
+                <a href="http://www.rbcroyalbank.com/" target="_blank">
+                    <img src="{{ url_for('static', filename='img/partners/rbc.png') }}" id="rbc" alt="RBC" style="margin-left: 80px; margin-top: 0px;"> </a>
+            </div>
+            <div class="partner-container">
+                <a href="https://edmonton.ctvnews.ca/" target="_blank">
+                    <img src="{{ url_for('static', filename='img/partners/ctv(1).png') }}" alt="CTV News" style="margin-top: 15px;"></a>
+            </div>
+            <div class="partner-container">
+                <a href="http://www.productionworld.ca/" target="_blank">
+                    <img src="{{ url_for('static', filename='img/partners/production_world(1).png') }}" alt="Production World" style="margin-top: 40px;"> </a>
+            </div>
+            <div class="partner-container">
+                <a href="http://www.eedc.ca/" target="_blank">
+                    <img src="{{ url_for('static', filename='img/partners/eedc(1).png') }}" alt="Edmonton Economic Development"></a>
+            </div>
+            <div class="partner-container">
+                <a href="http://informseries.com/" target="_blank">
+                    <img src="{{ url_for('static', filename='img/partners/inform(1).png') }}" alt="In.Form Series" style="margin-top: 0px"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container container-friends">
+        <div class="text-center my-5">
+            <h1>Special Thanks To Our Friends At</h1>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center mt-4">
+            
+            <div class="partner-container">
+                <a href="https://www.tylersirman.com/" target="_blank">
+                    <img src="{{ url_for('static', filename='img/partners/tsp(1).png') }}" alt="Tyler Sirman Photography" style="margin-top: -20px"></a>
+            </div>
+            <div class="partner-container">
+                <a href="http://foundryevents.ca/" target="_blank">
+                    <img src="{{ url_for('static', filename='img/partners/foundry.png') }}" alt="Foundry Events" style="margin-top: 0px"></a>
+            </div>
+            <div class="partner-container">
+                <a href="http://foundryevents.ca/" target="_blank">
+                    <img src="{{ url_for('static', filename='img/partners/athletics_alberta.png') }}" alt="athletics_alberta" style="margin-top: -20px"></a>
+            </div>
+            <div class="partner-container">
+                <a href="http://www.thomasculture.ca/" target="_blank">
+                    <img src="{{ url_for('static', filename='img/partners/thomas_culture.png') }}" alt="thomas_culture" style="margin-top: -10px"></a>
+            </div>
+            <div class="partner-container">
+                <a href="https://www.chateaulacombe.com/" target="_blank">
+                    <img src="{{ url_for('static', filename='img/partners/chateau.jpg') }}" alt="Chateau Lacombe" style="margin-top: 0px; margin-left: 15px"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- PARTNERS (END) -->
+
+<!-- SOCIAL MEDIA -->
+<section id="social">
+    <div class="container pt-5 text-center">
+        <h1>Follow Us!</h1>
+        <hr class="my-5">
+    </div>
+
+    <div class="container pb-5">
+        <div class="d-flex justify-content-center">
+            <div class="icon-container">
+                <a href="https://www.facebook.com/youngleadersworldtour/" target="_blank">
+                    <i class="fab fa-facebook-f fa-5x"></i></a></div>
+            <div class="icon-container">
+                <a href="https://www.instagram.com/youngleaders.world/" target="_blank">
+                    <i class="fab fa-instagram fa-5x"></i></a></div>
+            <div class="icon-container">
+                <a href="https://twitter.com/ylworld" target="_blank">
+                    <i class="fab fa-twitter fa-5x"></i></a></div>
+        </div>
+    </div>
+
+    <div class="instagram-container">
+        <!-- LightWidget WIDGET -->
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/54daa723d26952089c54b2b1c8d05094.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    </div>
+    <div class="py-5"></div>
+</section>
+<!-- SOCIAL MEDIA -->
+
+
+<!-- SWIPER SCRIPT -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });    
+</script>
+<!-- SWIPER SCRIPT (END)-->
+
+<script src="{{ url_for('static',filename='libs/purecounter.js') }}"></script>
+
+{% endblock content %}

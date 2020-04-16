@@ -1,0 +1,413 @@
+{% extends "page00_skeleton.html" %}
+{% block title %}Events{% endblock title %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static',filename='page04_events.css')}}" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='libs/parallax.min.js') }}"></script>
+
+ <!-- HEADER -->
+ <section id="header">
+    <div class="background-container d-flex justify-content-center align-items-center">
+        <h1 class="page-title">EVENTS</h1>
+        <div class="background-overlay"></div>
+    </div>
+</section>
+<!-- HEADER (END) -->
+
+<!-- INTRODUCTION -->
+<section id="introduction">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col wow fadeIn">
+                <p>
+                    All of our energy, talent, growth and awesomeness comes together in our Summits. There's no
+                    question, our summits are high energy and high impact. Summits feature 4 keynote speakers
+                    throughout the day, provide students with thought-provoking leadership questions, offer learning
+                    partners to share lessons with, and clear next steps to take after Summit is done.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+</div>
+</div>
+<!-- UPCOMING EVENTS (END) -->
+
+<!-- SUMMITS -->
+<section id="summits">
+    <div class="summit-container">
+        <div class="container my-5">
+            <div id="current-event" class="blue-border container my-3">
+                <h1 class="raleway text-center py-3">Upcoming Events</h1>
+                <h4 class="container py-3">Due to COVID-19 the Vision2020 Summit was canceled. We are happy to continue to interact with our students online through videos and courses:</h4>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img id="pencil" width="500px" src="{{ url_for('static', filename='img/events/pencil.png') }}" alt="">
+                    <div class="text-center" id="text-beside-pencil">
+                        <h1>YLW Personal Leadership Course</h1>
+                        <h3>Upcoming online courses coming soon!</h3>
+                        <p class="text-left">With lots of time at home, it is easy to fall into bad habits with your health, your learning and your relationships.  We want to help you come out of COVID-19, sharper than ever and ready to lead your life.</p>
+                        <p>Sign up to receive more information about our online course</p>
+                        <div class="btn btn-light mx-auto"> <a target="_blank" href="https://forms.gle/7JxhKc2NMEYx7AEU9">Register now!</a> </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="my-5"></div>
+
+            <div class="blue-border row flex-column">
+                <h1 class="raleway text-center mt-5">VISION2020</h1>
+                <h4 class="text-center">As a result of the pandemic, VISION2020 is rescheduled to March 2021</h4>
+                <div class="col-md-6 align-self-center embed-responsive embed-responsive-16by9">
+                    <iframe class="px-3 py-3" src="https://www.youtube.com/embed/kfGYMiwofbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
+
+                <div class="col my-3">
+                    <h1 class="text-center">Keynote Speakers</h1>
+
+                    <div id="speaker-container-section">
+                        <div class="d-flex flex-wrap justify-content-center text-center">
+                            <div class="speaker-container">
+                                <button class="btn" data-toggle="modal" data-target="#sarah-wells-modal" id="sarah-wells">
+                                </button>
+                                <p class="speaker-name">
+                                    Olympian
+                                </p>
+                                <p class="speaker-name">
+                                    Sarah Wells
+                                </p>
+                            </div>
+                            <div class="speaker-container">
+                                <button class="btn" data-toggle="modal" data-target="#dillon-mendes-modal" id="dillon-mendes">
+                                </button>
+                                <p class="speaker-name">
+                                    Environmentalist
+                                </p>
+                                <p class="speaker-name">
+                                    Dillon Mendes
+                                </p>
+                            </div>
+                            <div class="speaker-container">
+                                <button class="btn" data-toggle="modal" data-target="#shadille-estepan-modal" id="shadille-estepan">
+                                </button>
+                                <p class="speaker-name">
+                                    Born This Way's
+                                </p>
+                                <p class="speaker-name">
+                                    Shadille Estepan
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- START_MODAL -->
+                        <!-- <div class="modal" id="sarah-wells-modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">Olympian</h1>
+                                        <button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="{{ url_for('static', filename='img/speakers/vision2020/sarah-modal.gif') }}" alt="">
+                                        <div class="py-3"></div>
+                                        <h3>Sarah Wells</h3>
+                                        <p>
+                                            Obstacles don’t scare
+                                            Sarah Wells. As a 400m
+                                            hurdler, this Olympian’s
+                                            reputation was forged
+                                            through overcoming
+                                            challenges, redefining
+                                            realistic and achieving
+                                            the incredible. Take her debut at the London Olympics in 2012, which came despite an injury that had her sidelined her for months just the year before.
+                                            <br> <br>
+                                            Leaning in to innovative training techniques and a modified training plan, Sarah fought to realize her dream. Evidently someone who understands the importance of managing pressure and the importance of mindset, you'll want to listen up while Olympic semi-finalist and Pan Am Games silver medalist, Sarah Wells takes the stage.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="dillon-mendes-modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">Environmentalist</h1>
+                                        <button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="{{ url_for('static', filename='img/speakers/vision2020/dillon-modal.gif') }}" alt="">
+                                        <div class="py-3"></div>
+                                        <h3>Dillon Mendes</h3>
+                                        <p>Dillon Mendes co-founded
+                                            the social enterprise
+                                            PickWaste, which has, and
+                                            continues to have, a
+                                            massive impact on the
+                                            environment. Dillon is a
+                                            true believer in the Power
+                                            of One. After an encounter with a friend in high school, he pivoted his direction in life and realized he had the power to ignite change. He speaks about how one person, one action, or one movement can change the world. Dillon has already had the opportunity to share this message with over 9000 students and is not planning on stopping there
+                                            <br><br>
+                                            Dillon is a Top 25 Under 25 Canadian Environmental Changemaker award winner, and a Top 35 Under 35 Global Changemaker winner. Dillon is a social entrepreneur, TEDx & youth speaker as well as a student at the University of Waterloo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="shadille-estepan-modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title">Born This Way</h1>
+                                        <button class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="{{ url_for('static', filename='img/speakers/vision2020/shadille-modal.gif') }}" alt="">
+                                        <div class="py-3"></div>
+                                        <h3>Shadille Estepan</h3>
+                                        <p>
+                                            Shadille Estepan is
+                                            Communications and
+                                            Outreach Manager for
+                                            Lady Gaga's Born This
+                                            Way Foundation.  Shadille supports the Foundation’s external communications efforts – including video production – as well as the organization’s programming. Shadille has been part of Born This Way Foundation since 2012 when she served as part of the inaugural Youth Advisory Board. Shadille is originally from Miami and she is a graduate of the University of Florida.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- END_MODAL -->
+                    </div>
+
+                    <div class="py-5"></div>
+                </div>
+
+                <div id="insights-from" class="container text-center">
+                    <h1 class="text-center">Plus Leadership Insights From</h1>
+                    <div id="speakers-container" class="d-flex justify-content-center flex-wrap">
+                        <div id="josh" class="img-container-1">
+                            <div class="speaker-name-1">
+                                Josh Classen
+                            </div>
+                        </div>
+                        <div id="paul" class="img-container-1">
+                            <div class="speaker-name-1">
+                                Paul Woida
+                            </div>
+                        </div>
+                        <div id="carla" class="img-container-1">
+                            <div class="speaker-name-1">
+                                Carla Cuglietta
+                            </div>
+                        </div>
+                        <div id="ty" class="img-container-1">
+                            <div class="speaker-name-1">
+                                Tyler Waye
+                            </div>
+                        </div>
+                        <div id="lauren" class="img-container-1">
+                            <div class="speaker-name-1">
+                                Lauren White
+                            </div>
+                        </div>
+                        <div id="chris" class="img-container-1">
+                            <div class="speaker-name-1">
+                                Chris Koch
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-5"></div>
+                </div>
+            </div>
+
+            <div class="my-5"></div>
+
+            <!-- <div class="blue-border row">
+                <div class="row">
+                    <div class="col-md img-container">
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/speakers/vision2020/PaulWoida.jpg') }}" alt="">
+                    </div>
+                    <div class="col-md beside-img-container">
+                        <h1>Paul Woida Concert</h1>
+                        <p>School who registers the most students between Nov 1 - Apr 1 will win a Paul Woida concert at their school!</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="my-5"></div>
+    </div>
+</section>
+
+<section id="past-events">
+    <div class="my-5"></div>
+    <div class="events-container" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/summits/black_and_white_lake.jpg') }}">
+        <h1 class="raleway text-center container">Past Events</h1>
+
+        <h2 class="container text-center text-white roboto">International School of Kuala Lumpur</h2>
+
+        <p class="container">Thank you ISKL for a great few days of leadership talks!</p>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-8">
+                    <a href="https://www.iskl.edu.my/" target="_blank"><img id="iskl" src="{{ url_for('static', filename='img/iskl.jpg') }}" alt="International School of Kuala Lumpur" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-4"></div>
+
+        <h2 class="container text-center roboto text-white">Leader's Forum</h2>
+        <p class="container">We are super happy about the success of the Leader's Forum! Everyone had awesome ideas to share!
+            Remember, if you post any pictures from the event, make sure to use our hashtag to get featured! <br> #youngleaders #leadership #youthleaders
+        </p>
+
+        <div class="py-2"></div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img src="{{ url_for('static', filename='img/summits/leaders_forum.jpg') }}" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="{{ url_for('static', filename='img/summits/leaders_forum_2.jpg') }}" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="past-summits">
+    <div class="summit-container" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/summits/edmonton_canada.jpg') }}">
+
+        <h1 class="container pt-5">Past Conferences and Summits</h1>
+
+        <p class="container">Never experienced a YoungLeaders.World summit before? <br> Check this out!</p>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <iframe src="https://player.vimeo.com/video/126181796?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-5"></div>
+
+        <h2 class="container roboto text-center text-white">Edmonton | Canada</h2>
+
+        <div class="past-conferences-container d-flex flex-wrap justify-content-center">
+            <div id="intensive-conference-1" class="single-conference-container">
+                <div class="conference-text">
+                    <p class="conference-title">2019 Intensive Conference</p>
+                    <p class="conference-details">March 11th, 2019</p>
+                    <p class="conference-details">Edmonton Expo Centre</p>
+                </div>
+            </div>
+            <div id="intensive-conference-2" class="single-conference-container">
+                <div class="conference-text">
+                    <p class="conference-title">2018 Conference</p>
+                    <p class="conference-details">March 6th, 2018</p>
+                    <p class="conference-details">Edmonton Expo Centre</p>
+                </div>
+
+            </div>
+            <div id="intensive-conference-3" class="single-conference-container">
+                <div class="conference-text">
+                    <p class="conference-title">YoungLeaders.World Summit</p>
+                    <p class="conference-details">March 21st, 2017</p>
+                    <p class="conference-details">Edmonton Expo Centre</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="py-5"></div>
+        <div class="py-5"></div>
+
+    </div>
+
+
+
+
+    <div class="summit-container" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/summits/beijing_china.jpg') }}">
+
+        <div class="py-5"></div>
+        <div class="py-2"></div>
+
+        <h2 class="container text-center roboto text-white">China</h2>
+
+        <div class="py-4"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <iframe class="w-75" src="https://www.youtube.com/embed/dfyGqxaeN8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-1"></div>
+
+
+        <div class="past-conferences-container d-flex flex-wrap justify-content-center">
+
+            <div id="china-1" class="single-conference-container">
+                <div class="conference-text">
+                    <!-- <p class="conference-title">Hope International School</p> -->
+                    <p class="conference-details">November 2nd, 2018</p>
+                    <p class="conference-details">Beijing, China</p>
+                </div>
+            </div>
+            <div id="china-2" class="single-conference-container">
+                <div class="conference-text">
+                    <!-- <p class="conference-title">Beijing City International School</p> -->
+                    <p class="conference-details">November 10th, 2018</p>
+                    <p class="conference-details">November 18th, 2017</p>
+                    <p class="conference-details">Beijing, China</p>
+                </div>
+
+            </div>
+            <div id="china-3" class="single-conference-container">
+                <div class="conference-text">
+                    <!-- <p class="conference-title">Qingdao Amerasia International School</p> -->
+                    <p class="conference-details">November 6th, 2018</p>
+                    <p class="conference-details">November 14th, 2017</p>
+                    <p class="conference-details">Qingdao, China</p>
+                </div>
+
+            </div>
+            <div id="china-4" class="single-conference-container">
+                <div class="conference-text">
+                    <!-- <p class="conference-title">Concordia International School Shanghai</p> -->
+                    <p class="conference-details">November 11th, 2017</p>
+                    <p class="conference-details">March 4th, 2017</p>
+                    <p class="conference-details">Shanghai, China</p>
+                </div>
+
+            </div>
+            <div id="china-5" class="single-conference-container">
+                <div class="conference-text">
+                    <!-- <p class="conference-title">Suzhou Singapore International School</p> -->
+                    <p class="conference-details">2017, 2016, 2015</p>
+                    <p class="conference-details">Suzhou, China</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="py-5"></div>
+        <div class="py-3"></div>
+
+    </div>
+
+</section>
+{% endblock content %}

@@ -1,0 +1,55 @@
+@import "page00_skeleton";
+
+#header{
+    .background-container{
+    background: #000 url(../static/img/contact/team_picture.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 75px;
+    color: white;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+    
+        .background-overlay{
+            background: black; 
+            opacity: 0.4;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+}
+
+#faq{
+  background: whitesmoke;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  h2{
+    font-family: 'Raleway';
+  }
+
+  p{
+    padding: 0px;
+  }
+
+  .Q{
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: bold;
+    color: $primary;
+    padding-right: 10px;
+    line-height: 30px;
+  }
+  .A{
+    line-height: 30px;
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: bold;
+    color: $primary;
+    padding-right: 10px;
+  }
+}
