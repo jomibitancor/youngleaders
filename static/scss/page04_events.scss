@@ -7,14 +7,6 @@ body{
     background-size: cover;
     overflow-x: hidden;
 
-    // .city-header-text{
-    //     font-size: 3rem;
-    //     text-align: center;
-    //     color: white;
-    //     text-shadow: 2px 2px 5px black;
-    //     margin: 0 0 20px 0;
-    // }
-
     iframe{
         width: 100%;
         height: 50vh;
@@ -24,10 +16,10 @@ body{
 #header{
 
     .background-container{
-        background: #000 url(../static/img/stage.gif) no-repeat;
+        background: #000 url(../static/img/crowd1.webp) no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         background-position: center;
         color: white;
         position: relative;

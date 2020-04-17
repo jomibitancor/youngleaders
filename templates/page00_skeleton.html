@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="{{url_for('static', filename='libs/swiper.min.css')}}">
     <script type="text/javascript" src="{{url_for('static', filename='libs/swiper.min.js')}}"></script>
     <script src="{{url_for('static', filename='libs/wow.min.js')}}"></script>
-    <script src="https://kit.fontawesome.com/f1ab9365d8.js"></script>
     <script>new WOW().init();</script>
 
     <title>{% block title %}{% endblock title %} - YoungLeaders.World</title>
@@ -53,46 +52,46 @@
      <!-- FOOTER -->
      <section id="footer" class="pt-2">
         <div class="container">
-            <div class="row text-center">
+            <div id="feeter" class="row text-center align-items-center">
                 <div class="col">
-                    <div>
+                    <div class="raleway">
                         YoungLeaders.World <br>
                         <a style="color: #26B3BF;" href="mailto: info@youngleaders.world">info@youngleaders.world</a>
                     </div>
                 </div>
                 <div class="col">
-                    <div>
-                        YoungLeaders.World Office <br>
-                        Edmonton Expo Centre <br>
-                        7515 118 Ave NW. Edmonton, Alberta
-                        Canada T5B 0J2
-                    </div>
-                </div>
-                <div class="col">
-                    For Growth & Good.
                     <div class="d-flex justify-content-center">
                         <div class="p-2">
-                            <a style="color: #26B3BF;" href="https://www.facebook.com/youngleadersworldtour/" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
+                            <a href="https://www.facebook.com/youngleadersworldtour/" target="_blank">
+                                <img src="{{url_for('static', filename='img/logos/fb1.png')}}" alt="" class="logo">
                             </a>
                         </div>
                         <div class="p-2">
-                            <a style="color: #26B3BF;" href="https://www.instagram.com/ylworld/" target="_blank">
-                                <i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/youngleaders.world/" target="_blank">
+                                <img src="{{url_for('static', filename='img/logos/ig1.png')}}" alt="" class="logo">
                             </a>
                         </div>
                         <div class="p-2">
-                            <a style="color: #26B3BF;" href="https://twitter.com/ylworld" target="_blank">
-                                <i class="fab fa-twitter"></i>
+                            <a href="https://twitter.com/ylworld" target="_blank">
+                                <img src="{{url_for('static', filename='img/logos/tw1.png')}}" alt="" class="logo">
+                            </a>
+                        </div>
+                        <div class="p-2">
+                            <a href="https://www.youtube.com/channel/UCi-93YXlo7oBYf7jj6T9lvg" target="_blank">
+                                <img src="{{url_for('static', filename='img/logos/yt1.png')}}" alt="" class="logo">
                             </a>
                         </div>
                     </div>
+                    <p class="text-muted" id="icons8">Icons by <a target="_blank" href="https://icons8.com/">Icons8</a> </p>
+                </div>
+                <div class="col raleway">
+                    For Growth & Good.
                 </div>
             </div>
 
             <div class="row text-center pt-2">
                 <div class="col">
-                    <p class="lead">
+                    <p class="text-muted">
                         &copy; 2019 YoungLeaders.World
                     </p>
                 </div>

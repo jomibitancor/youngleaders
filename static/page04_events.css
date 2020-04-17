@@ -29,14 +29,15 @@ a {
   color: #26b3bf !important;
 }
 
-.navbar {
-  padding: 0rem 1rem;
+.logo {
+  width: 30px;
 }
 
 .navbar a {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
+  padding: 0rem 1.5rem !important;
 }
 
 .page-title {
@@ -65,6 +66,23 @@ a {
   background: black;
 }
 
+#footer #icons8 {
+  font-size: 10px;
+}
+
+#footer #icons8 a {
+  color: #6c757d !important;
+}
+
+@media (max-width: 576px) {
+  #footer #feeter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 body {
   background-color: #f5f2f2;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23187091' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23317eb5' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%235cadc0' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%236fbcbe' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23679ec3' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23457894' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%236f98c8' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%234394be' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%2353649c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%233187c1' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%238895cc' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23223768' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
@@ -79,10 +97,10 @@ body iframe {
 }
 
 #header .background-container {
-  background: #000 url(../static/img/stage.gif) no-repeat;
+  background: #000 url(../static/img/crowd1.webp) no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background-position: center;
   color: white;
   position: relative;

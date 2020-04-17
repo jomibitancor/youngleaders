@@ -29,14 +29,15 @@ a {
   color: #26b3bf !important;
 }
 
-.navbar {
-  padding: 0rem 1rem;
+.logo {
+  width: 30px;
 }
 
 .navbar a {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
+  padding: 0rem 1.5rem !important;
 }
 
 .page-title {
@@ -65,12 +66,29 @@ a {
   background: black;
 }
 
+#footer #icons8 {
+  font-size: 10px;
+}
+
+#footer #icons8 a {
+  color: #6c757d !important;
+}
+
+@media (max-width: 576px) {
+  #footer #feeter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #header .background-container {
   background: #000 url(../static/img/contact/team_picture.jpg) no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
-  background-position-y: 75px;
+  height: 50vh;
+  background-position: center;
   color: white;
   position: relative;
   z-index: 0;

@@ -5,7 +5,7 @@
         background: #000 url(../static/img/student_working.jpg) no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         background-position: center;
         color: white;
         position: relative;
@@ -21,4 +21,28 @@
             z-index: -1;
         }
     }    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+
+    .position-type{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .positions{
+        margin-top: 50px;
+    }
+}
+
+.position-logo{
+    width: 250px;
+    height: 250px;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
 }

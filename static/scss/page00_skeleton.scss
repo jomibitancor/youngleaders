@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab&display=swap');
 
+// TABLE OF CONTENTS
+// 1. TYPOGRAPHY
+// 2. COMPONENTS
+// 3. LAYOUTS
+
 $primary: #26B3BF;
 $gray: #322B2B;
 $light-gray: #F5F2F2;
 $gray-background: #f5f5f5;
 $primary: #26b3bf;
 
-// ! ------------- GLOBAL ---------------------
+// ! ------------- TYPOGRAPHY ---------------------
 .raleway{
     font-family: 'Raleway', sans-serif;
 }
@@ -16,6 +21,8 @@ $primary: #26b3bf;
 a{
     text-decoration: none !important;
 }
+
+// ! ------------- COMPONENTS ---------------------
 .btn-primary{
     background-color: $primary !important;
     border-color: $primary !important;
@@ -31,22 +38,22 @@ a{
         color: $primary !important;
     }
 }
-// ! ------------- GLOBAL ---------------------
+.logo{
+    width: 30px;
+}
 
 
-// ! ------------- NAVBAR ---------------------
+
+// ! ------------- LAYOUTS ---------------------
 .navbar{
-    padding: 0rem 1rem;
+    
   a{
       font-family: 'Raleway', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1rem;
       text-transform: uppercase;
+      padding: 0rem 1.5rem !important;
   }
 }
-// ! ------------- NAVBAR ---------------------
-
-
-// ! ------------- INTRO ---------------------
 .page-title{
     font-size: 5rem;
     font-family: 'Raleway', sans-serif;
@@ -63,14 +70,25 @@ a{
     padding-top: 40px;
     padding-bottom: 40px;
     background: #F5F2F2;
+    font-size: 1.5rem;
 }
-// ! ------------- INTRO ---------------------
 
-
-// ! ------------- FOOTER ---------------------
 #footer{
     text-align: center;
     color: white;
     background:black;
+
+    #icons8{
+        font-size: 10px;
+
+        a{
+            color: #6c757d !important;
+        }
+    }
+
+    @media (max-width: 576px){ 
+        #feeter{
+            flex-direction: column;
+        }
+    }
 }
-// ! ------------- FOOTER ---------------------

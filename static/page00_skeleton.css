@@ -29,14 +29,15 @@ a {
   color: #26b3bf !important;
 }
 
-.navbar {
-  padding: 0rem 1rem;
+.logo {
+  width: 30px;
 }
 
 .navbar a {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
+  padding: 0rem 1.5rem !important;
 }
 
 .page-title {
@@ -57,11 +58,29 @@ a {
   padding-top: 40px;
   padding-bottom: 40px;
   background: #F5F2F2;
+  font-size: 1.5rem;
 }
 
 #footer {
   text-align: center;
   color: white;
   background: black;
+}
+
+#footer #icons8 {
+  font-size: 10px;
+}
+
+#footer #icons8 a {
+  color: #6c757d !important;
+}
+
+@media (max-width: 576px) {
+  #footer #feeter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=page00_skeleton.css.map */

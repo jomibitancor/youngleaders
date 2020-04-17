@@ -3,27 +3,41 @@
 
 {% block content %}
 <link rel="stylesheet" href="{{ url_for('static',filename='page09_courses.css') }}">
-<div class="container-fluid">
+<div class="container-fluid" id="course-header">
     <h1 class="page-title text-center">
         Courses
     </h1>
 </div>
-<div class="container-fluid">
+<div class="container-fluid" id="content">
     <div class="course container">
         <img class="img-fluid course-img" src="{{ url_for('static', filename='img/main/success-series.jpg') }}" alt="">
         <div class="course-desc">
             <h1 class="course-title raleway">Student Success FREE Video Series</h1>
-            <button class="btn btn-primary"><a target="_blank" href="https://forms.gle/7JxhKc2NMEYx7AEU9">Sign me up!</a>  </button>
+            <div class="roboto">
+
+                <p>Topics include:</p>
+                <ul>
+                    <li>Managing Motivation</li>
+                    <li>Establishing A Productive Daily Routine</li>
+                    <li>Stress Management</li>
+                    <li>Post-Secondary School Applications</li>
+                </ul>
+            </div>
+            <a target="_blank" href="https://forms.gle/7JxhKc2NMEYx7AEU9"><button class="btn btn-primary">SIGN UP  </button></a>
         </div>
     </div>
 
-    <div class="course container">
-        <img src="{{ url_for('static', filename='img/events/pencil.png') }}" alt="" class="img-fluid course-img" id="pencil">
+    <div class="course container mt-5" id="mindset">
         <div class="course-desc">
-            <h1 class="course-title raleway">Leadership is a Mindset Course</h1>
-            <p>Launching May 2020</p>
-            <button class="btn btn-primary"><a target="_blank" href="https://forms.gle/7JxhKc2NMEYx7AEU9">Sign me up!</a>  </button>
+            <h1 class="course-title raleway">Leadership is a Mindset</h1>
+            <p class="roboto">
+                Now more than ever, students are feeling confusion about life decisions. This course is designated for students who feel anxiety or apathy towards their future.
+                <br>
+                <span class="font-italic">Course launches May 2020</span> 
+            </p>
+            <a target="_blank" href="https://forms.gle/7JxhKc2NMEYx7AEU9"><button class="btn btn-primary">MORE DETAILS  </button></a>
         </div>
+        <img src="{{ url_for('static', filename='img/course/course.webp') }}" alt="" class="img-fluid course-img" id="mindset-photo">
     </div>
 </div>
 

@@ -11,7 +11,7 @@
 <!-- VIDEO -->
 <header id="v-header" class="container">
     <div class="fullscreen-video-wrap">
-        <video loop muted="true">
+        <video autoplay loop muted="true">
             <source src="{{ url_for('static',filename='img/VideoBackground.mp4') }}" type="video/mp4" />
         </video>
     </div>
@@ -24,7 +24,7 @@
                     <h1 id="quote1">For Growth & Good.</h1>
                 </div>
                 <div class="swiper-slide">
-                    <h1 id="quote2">Leadership is a mindset, not a status.</h1>
+                    <h1 id="quote2">Leadership is a <strong>mindset</strong> , not a status.</h1>
                 </div>
             </div>
         </div>
@@ -32,15 +32,26 @@
 </header>
 <!--VIDEO END -->
 
-<div class="d-flex py-5 container-fluid justify-content-center flex-column align-items-center">
-    <h1 class=" raleway text-center">COVID message from our Executive Director, Carla Cuglietta</h1>
-    <div class="py-3 container embed-responsive embed-responsive-16by9">
-        <iframe class="pb-5 embed-responsive-item" src="https://www.youtube.com/embed/5lCXvjyjKCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- ATTENTION -->
+<div class="py-5 container-fluid" id="attention">
+    <div class="container" id="covid">
+        <div class="description">
+            <h1 class="raleway">COVID message from our Executive Director, Carla Cuglietta</h1>
+            <svg id="arrow" width="250" height="auto" viewBox="0 0 133 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.924927 1.41141C0.924927 9.02199 1.66733 17.9852 8.02627 23.1484C13.5662 27.6467 22.8777 27.528 29.2437 25.0104C35.9414 22.3616 42.9298 18.2428 50.3529 18.5802C53.4681 18.7218 54.3319 21.7311 54.8778 24.3825C55.3994 26.9161 54.7458 28.3369 53.254 30.358C49.769 35.0797 43.1389 43.0692 50.5044 47.8083C53.3972 49.6695 56.0596 50.052 59.5327 50.3414C68.2128 51.0647 77.2072 49.9192 85.6647 48.0031C98.0222 45.2036 109.221 39.919 120.176 33.7572" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M117.448 30.2498C119.936 32.2101 121.509 35.6452 122.904 38.4337" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M117.382 30.2222C122.075 29.9325 126.874 30.136 131.498 29.1727" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M122.907 38.5295C125.557 35.0183 128.493 31.8365 131.744 28.8809" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                
+        </div>
+        <div class="py-3 embed-responsive embed-responsive-16by9">
+            <iframe class="pb-5 embed-responsive-item" src="https://www.youtube.com/embed/5lCXvjyjKCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        </div>
     </div>
 
-    <img width="1000" height="auto" id="success-series" src="{{ url_for('static', filename='img/main/success-series.jpg') }}" alt="" class="img-fluid">
-    <h1 class="py-2 roboto text-center">Free Video Series starting on April 20, 2020</h1>
-    <button class="btn btn-primary"><a href="https://forms.gle/7JxhKc2NMEYx7AEU9">Register Now!</a> </button>
+    <img width="1000" height="auto" id="success-series" src="{{ url_for('static', filename='img/main/success-series.jpg') }}" alt="" class="img-fluid mt-5">
+    <h2 class="py-2 raleway text-center">Free Video Series starting on April 20, 2020</h2>
+    <button class="btn btn-primary"><a target="_blank" href="https://forms.gle/7JxhKc2NMEYx7AEU9">REGISTER NOW</a> </button>
 </div>
 
 <!-- STATISTICS -->
@@ -48,14 +59,12 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <h1>
-                    For Young Leaders, <br> By Young Leaders
-                </h1>
-                <hr class="my-5">
+                <h1 class="raleway">For Young Leaders, <br> By Young Leaders</h1>
+                <hr class="my-3">
             </div>
         </div>
-        <div class="row pt-3">
-            <p class="text-center">
+        <div class="row pt-1">
+            <p class="roboto text-center">
                 We collaborate with young people around the world to help them discover life leadership. YL.W is
                 dedicated to helping young people, ages 13-21, understand how to develop a leader mindset. How to
                 think like a leader, make decisions like a leader and articulate your goals. We believe leadership
@@ -69,7 +78,7 @@
             <div class="col">
                 <div id="box-1" class="box">
                     <div class="box-inner">
-                        <i class="fas fa-user-graduate fa-3x"></i>
+                        <img src="{{url_for('static',filename='img/logos/student.png')}}" alt="" class="logo">
                         <h2 onscroll="" class="counter pt-0" >
                             <span data-purecounter-start="9999" data-purecounter-end="11496" class="purecounter">0</span>
                         </h2>
@@ -81,7 +90,7 @@
             <div class="col">
                 <div id="box-2" class="box">
                     <div class="box-inner">
-                        <i class="fas fa-mountain fa-3x"></i>
+                        <img src="{{url_for('static',filename='img/logos/mtn.png')}}" alt="" class="logo">
                         <h2 class="counter">
                             <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-delay="200" class="purecounter">0</span>
                         </h2>
@@ -94,7 +103,7 @@
             <div class="col">
                 <div id="box-3" class="box">
                     <div class="box-inner">
-                        <i class="fas fa-globe-americas fa-3x"></i>
+                        <img src="{{url_for('static',filename='img/logos/globe.png')}}" alt="" class="logo">
                         <h2 class="counter pt-0">
                             <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-delay="150" class="purecounter">0</span>
                         </h2>
@@ -111,23 +120,15 @@
 <div class="my-5"></div>
 
 <section id="journey_ambassador_and_events" class="py-5">
-
-    <div class="my-5"></div>
-
-
     <div class="container">
         <div id="events-flex-container">
             <div style="flex: 2;" class="events-flex-item">
                 <div id="ambassador-visit-img"></div>
             </div>
             <div style="flex: 2;" class="events-flex-item">
-                <h1 style="color:#1EA8B4;font-family: Raleway;font-size: 45px">Ambassador Visits</h1>
-                <p>
-                    Want to learn more about the leadership work that YL.W does? Want to find out more about upcoming Summits? Book a YoungLeaders.World student ambassador to come to your school for an assembly, classroom visit or school event. To find out more, fill in the information below.
-                    <p style="font-size: 16px;">
-                    *YoungLeaders.World ambassador visits are only available in the Capital Region of Alberta, Canada.
-                    </p>
-                </p>
+                <h1 class="raleway">Ambassador Visits</h1>
+                <p class="roboto">Want to learn more about the leadership work that YL.W does? Want to find out more about upcoming Summits? Book a YoungLeaders.World student ambassador to come to your school for an assembly, classroom visit or school event. To find out more, fill in the information below.</p>
+                <p class="roboto">*YoungLeaders.World ambassador visits are only available in the Capital Region of Alberta, Canada.</p>
                 <div class="d-flex justify-content-center">
                     <div>
                         <button class="btn btn-primary" data-toggle="modal" data-target="#ambassadorVisit">
@@ -202,7 +203,7 @@
                                             <div>
                                                 <p>
                                                     <span class="send-btn">
-                                                        <input id="btn" class="btn" type="submit" value="SEND" />
+                                                        <input id="btn" class="btn btn-primary" type="submit" value="SEND" />
                                                     </span>
                                                 </p>
                                             </div>
@@ -228,57 +229,59 @@
 <section id="partners" class="py-5">
     <div class="container container-partners">
         <div class="text-center">
-            <h1>YoungLeaders.World's Impact is made possible by</h1>
-            <hr class="my-5">
+            <h1 class="raleway">YoungLeaders.World's Impact is made possible by</h1>
+            <!-- <hr class="my-5"> -->
         </div>
         <div class="d-flex flex-wrap justify-content-center mt-4">
             <div class="partner-container">
                 <a href="http://www.rbcroyalbank.com/" target="_blank">
-                    <img src="{{ url_for('static', filename='img/partners/rbc.png') }}" id="rbc" alt="RBC" style="margin-left: 80px; margin-top: 0px;"> </a>
+                    <img src="{{ url_for('static', filename='img/partners/rbc.png') }}" id="rbc" alt="RBC" style="margin-left: 80px; margin-top: 0px;" loading="lazy"> </a>
             </div>
             <div class="partner-container">
                 <a href="https://edmonton.ctvnews.ca/" target="_blank">
-                    <img src="{{ url_for('static', filename='img/partners/ctv(1).png') }}" alt="CTV News" style="margin-top: 15px;"></a>
+                    <img src="{{ url_for('static', filename='img/partners/ctv(1).png') }}" alt="CTV News" style="margin-top: 15px;" loading="lazy"></a>
             </div>
             <div class="partner-container">
                 <a href="http://www.productionworld.ca/" target="_blank">
-                    <img src="{{ url_for('static', filename='img/partners/production_world(1).png') }}" alt="Production World" style="margin-top: 40px;"> </a>
+                    <img src="{{ url_for('static', filename='img/partners/production_world(1).png') }}" alt="Production World" style="margin-top: 40px;" loading="lazy"> </a>
             </div>
             <div class="partner-container">
                 <a href="http://www.eedc.ca/" target="_blank">
-                    <img src="{{ url_for('static', filename='img/partners/eedc(1).png') }}" alt="Edmonton Economic Development"></a>
+                    <img src="{{ url_for('static', filename='img/partners/eedc(1).png') }}" alt="Edmonton Economic Development" loading="lazy"></a>
             </div>
             <div class="partner-container">
                 <a href="http://informseries.com/" target="_blank">
-                    <img src="{{ url_for('static', filename='img/partners/inform(1).png') }}" alt="In.Form Series" style="margin-top: 0px"></a>
+                    <img src="{{ url_for('static', filename='img/partners/inform(1).png') }}" alt="In.Form Series" style="margin-top: 0px" loading="lazy"></a>
             </div>
         </div>
     </div>
     <div class="container container-friends">
         <div class="text-center my-5">
-            <h1>Special Thanks To Our Friends At</h1>
+            <hr class="my-5">
+            <h1 class="raleway">Special Thanks To Our Friends At</h1>
+            
         </div>
         <div class="d-flex flex-wrap justify-content-center mt-4">
             
             <div class="partner-container">
                 <a href="https://www.tylersirman.com/" target="_blank">
-                    <img src="{{ url_for('static', filename='img/partners/tsp(1).png') }}" alt="Tyler Sirman Photography" style="margin-top: -20px"></a>
+                    <img src="{{ url_for('static', filename='img/partners/tsp(1).png') }}" alt="Tyler Sirman Photography" style="margin-top: -20px" loading="lazy"></a>
             </div>
             <div class="partner-container">
                 <a href="http://foundryevents.ca/" target="_blank">
-                    <img src="{{ url_for('static', filename='img/partners/foundry.png') }}" alt="Foundry Events" style="margin-top: 0px"></a>
+                    <img src="{{ url_for('static', filename='img/partners/foundry.png') }}" alt="Foundry Events" style="margin-top: 0px" loading="lazy"></a>
             </div>
             <div class="partner-container">
                 <a href="http://foundryevents.ca/" target="_blank">
-                    <img src="{{ url_for('static', filename='img/partners/athletics_alberta.png') }}" alt="athletics_alberta" style="margin-top: -20px"></a>
+                    <img src="{{ url_for('static', filename='img/partners/athletics_alberta.png') }}" alt="athletics_alberta" style="margin-top: -20px" loading="lazy"></a>
             </div>
             <div class="partner-container">
                 <a href="http://www.thomasculture.ca/" target="_blank">
-                    <img src="{{ url_for('static', filename='img/partners/thomas_culture.png') }}" alt="thomas_culture" style="margin-top: -10px"></a>
+                    <img src="{{ url_for('static', filename='img/partners/thomas_culture.png') }}" alt="thomas_culture" style="margin-top: -10px" loading="lazy"></a>
             </div>
             <div class="partner-container">
                 <a href="https://www.chateaulacombe.com/" target="_blank">
-                    <img src="{{ url_for('static', filename='img/partners/chateau.jpg') }}" alt="Chateau Lacombe" style="margin-top: 0px; margin-left: 15px"></a>
+                    <img src="{{ url_for('static', filename='img/partners/chateau.png') }}" alt="Chateau Lacombe" style="margin-top: 0px; margin-left: 15px" loading="lazy"></a>
             </div>
         </div>
     </div>
@@ -288,7 +291,7 @@
 <!-- SOCIAL MEDIA -->
 <section id="social">
     <div class="container pt-5 text-center">
-        <h1>Follow Us!</h1>
+        <h1 class="raleway">Follow Us!</h1>
         <hr class="my-5">
     </div>
 
@@ -296,13 +299,24 @@
         <div class="d-flex justify-content-center">
             <div class="icon-container">
                 <a href="https://www.facebook.com/youngleadersworldtour/" target="_blank">
-                    <i class="fab fa-facebook-f fa-5x"></i></a></div>
+                    <img src="{{url_for('static', filename='img/logos/fb.png')}}" alt="" class="logo">
+                </a>
+            </div>
             <div class="icon-container">
                 <a href="https://www.instagram.com/youngleaders.world/" target="_blank">
-                    <i class="fab fa-instagram fa-5x"></i></a></div>
+                    <img src="{{url_for('static', filename='img/logos/ig.png')}}" alt="" class="logo">
+                </a>
+            </div>
             <div class="icon-container">
                 <a href="https://twitter.com/ylworld" target="_blank">
-                    <i class="fab fa-twitter fa-5x"></i></a></div>
+                    <img src="{{url_for('static', filename='img/logos/tw.png')}}" alt="" class="logo">
+                </a>
+            </div>
+            <div class="icon-container">
+                <a href="https://www.youtube.com/channel/UCi-93YXlo7oBYf7jj6T9lvg" target="_blank">
+                    <img src="{{url_for('static', filename='img/logos/yt.png')}}" alt="" class="logo">
+                </a>
+            </div>
         </div>
     </div>
 

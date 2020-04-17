@@ -1,8 +1,19 @@
 @import 'page00_skeleton';
 
+#course-header{
+    background: url(../static/img/course/books.webp) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .page-title{
     padding-top: 20vh;
     height: 50vh;
+    color: white;
+}
+
+#content{
+    background: #f5f5f5;
 }
 
 .course{
@@ -18,24 +29,37 @@
     .course-img{
         width: 100%;
         height: auto;
-        // flex: content;
 
         @media (min-width: 768px){ 
             width: 40vw;
+        }
+        @media (max-width: 964px) and (min-width: 769px) {
+            width: 50%;
+            height: 350px;
         }
     }
 
     .course-desc{
         display: flex;
-        align-self: center;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: column;
-        text-align: center;
-        padding: 25px;
+        text-align: left;
+        padding: 10px 50px;
         flex: 6;
+
+        button{
+            width: 50%;
+        }
     }
 }
 
-#pencil{
-    border: 1px solid black;
+#mindset{
+    @media (max-width: 768px){ 
+        .course-desc{
+            order: 2;
+        }
+        img{
+            order: 1;
+        }
+    }
 }

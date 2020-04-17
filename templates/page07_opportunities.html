@@ -18,7 +18,7 @@
     <div class="container py-4">
         <div class="row">
             <div class="col">
-                <p style="font-size: 1.5rem;">
+                <p>
                     We love when <strong>leadership</strong> and <strong>passion</strong>  come together
                 </p>
             </div>
@@ -27,50 +27,49 @@
 </section>
 <!-- INTRODUCTION -->
 
-<section id="main-content" class="py-5">
-    <div class="container position">
-        <div class="row">
-            <h2 style="font-size: 3rem">Paid Positions</h2>
-        </div>
-        <div class="row">
-            <h3>If you are passionate about athletics and you have attended one or more YoungLeaders.World conferences or courses, we encourage you to apply for: </h3>
-        </div>
-        <div class="d-flex justify-content-around align-items-center mt-5">
-            <div>
-                <img src="{{ url_for('static', filename='img/partners/athletics_alberta.png') }}" alt="">
+<section class="py-5 container-fluid">
+    <div class="container content">
+        <div class="position-type">
+            <h1 class="raleway">Volunteer Positions</h1>
+            <p class="roboto">The following are volunteer opportunities that are available with organizations that we are aligned with:</p>
+            
+            <div class="positions row">
+                <div class="position-logo col-3">
+                    <img src="{{url_for('static', filename='img/logos/ylwlogo.png')}}" alt="">
+                </div>
+                <div class="position-description col">
+                    <h2 class="raleway position-title">YL.W Student Internship</h2>
+                    <p class="roboto position-details">Youngleaders.World opens up internship opportunities to students in high school in the Edmonton Area. If you have a desire to learn more about leadership, be mentored by some of the leading voices in youth leadership in Canada and have a good work ethic, please apply here.  Applications open May 4 - 24, 2020.</p>
+                    <p class="roboto text-muted font-italic">Please note that teacher reference is required so please give yourself at least a few days to apply</p>
+                    <a target="_blank" href="{{url_for('static', filename='docs/ylwinternship.pdf')}}" class="btn btn-primary">INTERN APPLICATION</a>
+                </div>
             </div>
-            <div>
-                <h2>Positions coming soon</h2>
-            </div>
-        </div>
-    </div>
-    <div class="py-3">
-        <div class="container"><hr></div>
-    </div>
-    <div class="container position">
-        <div class="row">
-            <h2 style="font-size: 3rem">Volunteer Positions</h2>
-        </div>
-        <div class="row">
-            <h3>The following are volunteer opportunities that are available with organizations that we are aligned with: </h3>
-        </div>
-        <div class="d-flex justify-content-around align-items-center mt-5">
-            <div>
-                <img style="width: 250px;" src="{{ url_for('static', filename='img/logos/ylwlogo.png') }}" alt="">
-            </div>
-            <div class="text-center">
-                <h2>YL.W Student Internship</h2>
-                <p>Read <a href="{{ url_for('static', filename='docs/YLW Internship Info 2020 2021 (2).pdf') }}">here</a> for more information</p>
+            <div class="positions row">
+                <div class="position-logo col-3">
+                    <img src="{{url_for('static', filename='img/partners/athletics_alberta.png')}}" alt="">
+                </div>
+                <div class="position-description col">
+                    <h2 class="raleway position-title">Athletics Alberta</h2>
+                    <p class="roboto position-details text-muted font-italic">Positions coming soon</p>
+                </div>
             </div>
         </div>
-        <div class="d-flex justify-content-around align-items-center mt-5">
-            <div>
-                <img src="{{ url_for('static', filename='img/partners/athletics_alberta.png') }}" alt="">
-            </div>
-            <div>
-                <h2>Positions coming soon</h2>
+        <div class="mt-5 position-type">
+            <h1 class="raleway">Paid Positions</h1>
+            <p class="roboto">If you are passionate about athletics and you have attended one or more YoungLeaders.World conferences or courses, we encourage you to apply for</p>
+            <div class="positions">
+                <div class="positions row">
+                    <div class="position-logo col-3">
+                        <img src="{{url_for('static', filename='img/partners/athletics_alberta.png')}}" alt="">
+                    </div>
+                    <div class="position-description col">
+                        <h2 class="raleway position-title">Athletics Alberta</h2>
+                        <p class="roboto position-details text-muted font-italic">Positions coming soon</p>
+                    </div>
+                </div>
             </div>
         </div>
+        
     </div>
 </section>
 
