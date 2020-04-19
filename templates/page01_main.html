@@ -33,7 +33,37 @@
 
 <!-- ATTENTION -->
 <div class="py-5 container-fluid" id="attention">
-    <div class="container" id="covid">
+    <div class="row" style="margin-left: 50px; margin-right: 50px;">
+        <div class="col">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v7NLHJPfu7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col series-description">
+            <h1 class="raleway">Student's Guide to Success During COVID-19</h1>
+            <p class="roboto">Since starting working from home during the COVID-19 pandemic, I've never been more productive... Yeah, right. How can students really finish their school year from home? </p>
+            <p class="roboto">For more videos about productivity and leadership, subscribe to our channel, follow us on Instagram @youngleaders.world. You can also REGISTER now for email updates about the series</p>
+            <div class="container text-center">
+                <a href="https://www.youtube.com/channel/UCi-93YXlo7oBYf7jj6T9lvg" target="_blank">
+                    <img src="{{url_for('static', filename='img/logos/yt1.png')}}" alt="">
+                </a>
+                <a href="https://www.instagram.com/youngleaders.world/" target="_blank">
+                    <img src="{{url_for('static', filename='img/logos/ig1.png')}}" alt="">
+                </a>
+            </div>
+            <div class="container text-center">
+                <button class="btn btn-primary"><a target="_blank" href="https://forms.gle/7JxhKc2NMEYx7AEU9">REGISTER NOW</a> </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+
+        <img width="1000" height="auto" id="success-series" src="{{ url_for('static', filename='img/main/success-series.jpg') }}" alt="" class="img-fluid mt-5">
+        <h2 class="py-2 raleway text-center">Free Video Series starting on April 19, 2020</h2>
+    </div>
+
+    <div class="container pt-5 mt-5" id="covid">
         <div class="description">
             <h1 class="raleway">COVID message from our Executive Director, Carla Cuglietta</h1>
             <svg id="arrow" width="250" height="auto" viewBox="0 0 133 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,10 +77,6 @@
             <iframe class="pb-5 embed-responsive-item" src="https://www.youtube.com/embed/5lCXvjyjKCk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
         </div>
     </div>
-
-    <img width="1000" height="auto" id="success-series" src="{{ url_for('static', filename='img/main/success-series.jpg') }}" alt="" class="img-fluid mt-5">
-    <h2 class="py-2 raleway text-center">Free Video Series starting on April 20, 2020</h2>
-    <button class="btn btn-primary"><a target="_blank" href="https://forms.gle/7JxhKc2NMEYx7AEU9">REGISTER NOW</a> </button>
 </div>
 
 <!-- STATISTICS -->
