@@ -1,3 +1,10 @@
 {
-    "python.pythonPath": "ylwvirtualenv\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\bitan\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe",
+    "liveSassCompile.settings.formats": [
+        {
+          "format": "expanded",
+          "extensionName": ".css",
+          "savePath": "~/../"
+        }
+      ]
 }
