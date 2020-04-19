@@ -1,17 +1,3 @@
-# import os
-# import sys
-
-
-# sys.path.insert(0, os.path.dirname(__file__))
-
-
-# def application(environ, start_response):
-#     start_response('200 OK', [('Content-Type', 'text/plain')])
-#     message = 'It works!\n'
-#     version = 'Python %s\n' % sys.version.split()[0]
-#     response = '\n'.join([message, version])
-#     return [response.encode()]
-
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -32,11 +18,11 @@ def speakers():
 def events():
     return render_template('page04_events.html')
 
-@app.route('/video-resources')
+@app.route('/videoresources')
 def videoresources():
     return render_template('page05_videoresources.html')
 
-@app.route('/ways-to-give')
+@app.route('/waystogive')
 def waystogive():
     return render_template('page06_waystogive.html')
 

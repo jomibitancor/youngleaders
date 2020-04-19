@@ -38,13 +38,35 @@ aria-hidden="true">
   <!-- HEADER (END) -->
 
   <section id="introduction">
-    <p class="container text-center">Motivational Personal Leadership Series <br> by Tyler Waye And Carla Cuglietta </p>
   </section>
 
   <!-- VIDEO RESOURCES -->
-  <section id="video_resources" class="py-5">
+  <section id="video_resources" class="py-5 container-fluid">
+    <div class="row" style="margin-left: 50px; margin-right: 50px;">
+        <div class="col">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v7NLHJPfu7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col series-description">
+            <h1 class="raleway">Student's Guide to Success During COVID-19</h1>
+            <p class="roboto">Since starting working from home during the COVID-19 pandemic, I've never been more productive... Yeah, right. How can students really finish their school year from home? </p>
+            <p class="roboto">For more videos about productivity and leadership, subscribe to our channel, follow us on Instagram @youngleaders.world. You can also REGISTER now for email updates about the series</p>
+            <div class="container text-center">
+                <a href="https://www.youtube.com/channel/UCi-93YXlo7oBYf7jj6T9lvg" target="_blank">
+                    <img src="{{url_for('static', filename='img/logos/yt1.png')}}" alt="">
+                </a>
+                <a href="https://www.instagram.com/youngleaders.world/" target="_blank">
+                    <img src="{{url_for('static', filename='img/logos/ig1.png')}}" alt="">
+                </a>
+            </div>
+            <div class="container text-center">
+                <button class="btn btn-primary"><a target="_blank" href="https://forms.gle/7JxhKc2NMEYx7AEU9">REGISTER NOW</a> </button>
+            </div>
+        </div>
+    </div>
 
-    <div class="container text-center">
+    <div class="container text-center mt-5">
         <img src="{{url_for('static', filename='img/video_resources/thrive.png')}}" loading="lazy" alt="">
     </div>
 

@@ -45,15 +45,77 @@ a{
 
 
 // ! ------------- LAYOUTS ---------------------
-.navbar{
-    
-  a{
-      font-family: 'Raleway', sans-serif;
-      font-size: 1rem;
-      text-transform: uppercase;
-      padding: 0rem 1.5rem !important;
-  }
+nav{
+    z-index: 2;
+    background: white;
+    position: absolute;
+
+    .toggle-container {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 50; /* Stay on top */
+        top: 0; /* Stay at the top */
+        right: 0;
+        background-color: white; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        display: block;
+        opacity: 0;
+    }
+    .fadeIn{
+        animation: fadeIn 1s forwards;
+        animation-delay: 0.5s;
+    }
+    .fadeout{
+        animation: fadeOut 0.1s forwards;
+        
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    @keyframes fadeOut{
+        from{opacity: 1;}
+        to{opacity: 0;}
+    }
+
+    .navbar-toggler-icon{
+        position: absolute;
+        z-index: 100 !important;
+        right: 50px;
+        color: black;
+        cursor: pointer;
+    }
+
+    a{
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        color: rgba(0,0,0,.7) !important;
+        font-size: 1rem;
+    }
+
+    .nav-link{
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
 }
+
+
 .page-title{
     font-size: 5rem;
     font-family: 'Raleway', sans-serif;
@@ -91,4 +153,11 @@ a{
             flex-direction: column;
         }
     }
+}
+
+.series-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
