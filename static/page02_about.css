@@ -33,11 +33,108 @@ a {
   width: 30px;
 }
 
-.navbar a {
+nav {
+  z-index: 2;
+  background: white;
+  position: absolute;
+}
+
+nav .toggle-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+nav .sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 50;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  right: 0;
+  background-color: white;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+nav .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  display: block;
+  opacity: 0;
+}
+
+nav .fadeIn {
+  -webkit-animation: fadeIn 1s forwards;
+          animation: fadeIn 1s forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+nav .fadeout {
+  -webkit-animation: fadeOut 0.1s forwards;
+          animation: fadeOut 0.1s forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+nav .navbar-toggler-icon {
+  position: absolute;
+  z-index: 100 !important;
+  right: 50px;
+  color: black;
+  cursor: pointer;
+}
+
+nav a {
   font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
   text-transform: uppercase;
-  padding: 0rem 1.5rem !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+  font-size: 1rem;
 }
 
 .page-title {
@@ -58,6 +155,7 @@ a {
   padding-top: 40px;
   padding-bottom: 40px;
   background: #F5F2F2;
+  font-size: 1.5rem;
 }
 
 #footer {
