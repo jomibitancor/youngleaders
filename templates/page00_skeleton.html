@@ -42,36 +42,13 @@
                 </li> -->
             </ul>
         </div>
-        <span class="navbar-toggler-icon" onclick="navToggle()"></span>   
+        <span class="navbar-toggler-icon" id="nav-toggler"></span>   
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="navToggle()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('opportunities') }}">Opportunities</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
         </div>
     </nav>
-
-    <script>
-        var x = 0;
-        function navToggle(){
-            if(x==0){
-                x = 1;
-                openNav()
-            }
-            else{
-                x = 0;
-                console.log("non BRUH")
-                closeNav()
-            }
-        }
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
     <!-- NAVBAR END -->
 
     {% block content %}

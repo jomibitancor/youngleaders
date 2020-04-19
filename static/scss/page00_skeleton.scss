@@ -62,7 +62,7 @@ nav{
         z-index: 50; /* Stay on top */
         top: 0; /* Stay at the top */
         right: 0;
-        background-color: #111; /* Black*/
+        background-color: white; /* Black*/
         overflow-x: hidden; /* Disable horizontal scroll */
         padding-top: 60px; /* Place content 60px from the top */
         transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -70,12 +70,44 @@ nav{
     .sidenav a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: 25px;
-        color: #818181;
         display: block;
-        transition: 0.3s;
+        opacity: 0;
+    }
+    .fadeIn{
+        animation: fadeIn 1s forwards;
+        animation-delay: 0.5s;
+    }
+    .fadeout{
+        animation: fadeOut 0.1s forwards;
+        
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    @keyframes fadeOut{
+        from{opacity: 1;}
+        to{opacity: 0;}
     }
 
+    .navbar-toggler-icon{
+        position: absolute;
+        z-index: 100 !important;
+        right: 50px;
+        color: black;
+        cursor: pointer;
+    }
+
+    a{
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        color: rgba(0,0,0,.7) !important;
+        font-size: 1rem;
+    }
 }
 
 

@@ -18,11 +18,11 @@ def speakers():
 def events():
     return render_template('page04_events.html')
 
-@app.route('/video-resources')
+@app.route('/videoresources')
 def videoresources():
     return render_template('page05_videoresources.html')
 
-@app.route('/ways-to-give')
+@app.route('/waystogive')
 def waystogive():
     return render_template('page06_waystogive.html')
 
