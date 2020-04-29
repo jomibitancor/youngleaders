@@ -74,11 +74,9 @@ nav .sidenav a {
   opacity: 0;
 }
 
-nav .fade {
+nav .fadeIn {
   -webkit-animation: fadeIn 1s forwards;
           animation: fadeIn 1s forwards;
-  -webkit-animation: fadeleft  2s forwards;
-          animation: fadeleft  2s forwards;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
@@ -139,6 +137,11 @@ nav a {
   font-size: 1rem;
 }
 
+nav .nav-link {
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
 .page-title {
   font-size: 5rem;
   font-family: 'Raleway', sans-serif;
@@ -181,6 +184,22 @@ nav a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.series-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #v-header {
