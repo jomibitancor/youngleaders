@@ -2,7 +2,7 @@
 {% block title %}Courses{% endblock title %}
 
 {% block content %}
-<link rel="stylesheet" href="{{ url_for('static',filename='page09_courses.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/page09_courses.css') }}">
 <div class="container-fluid" id="course-header">
     <h1 class="page-title text-center">
         Courses
@@ -29,15 +29,16 @@
 
     <div class="course container mt-5" id="mindset">
         <div class="course-desc">
-            <h1 class="course-title raleway">Leadership is a Mindset</h1>
-            <p class="roboto">
-                Now more than ever, students are feeling confusion about life decisions. This course is designated for students who feel anxiety or apathy towards their future.
-                <br>
-                <span class="font-italic">Course launches May 2020</span> 
+            <h1 class="course-title raleway">Clarity And Confidence</h1>
+            <p class="roboto">A Step-by-Step Blueprint for Students</p>
+            <p class="roboto"> 
+                Feeling overwhelmed with all that you have going on? Millions of thoughts about school, friends, keeping up with social media, career choice running through your head?  Don’t know what your future holds? 
+                <br> <br>
+                <span>Let’s take a breath together and get sorted.</span> 
             </p>
-            <a target="_blank" href="https://forms.gle/7JxhKc2NMEYx7AEU9"><button class="btn btn-primary">MORE DETAILS  </button></a>
+            <a target="_blank" href="https://forms.gle/7JxhKc2NMEYx7AEU9"><button class="btn btn-primary">MORE INFO</button></a>
         </div>
-        <img src="{{ url_for('static', filename='img/course/course.webp') }}" alt="" class="img-fluid course-img" id="mindset-photo">
+        <img style="padding-top: 50px; width: 70%; height: 100%;" src="{{ url_for('static', filename='img/course/clarity_and_confidence.jpg') }}" alt="" id="mindset-photo">
     </div>
 </div>
 

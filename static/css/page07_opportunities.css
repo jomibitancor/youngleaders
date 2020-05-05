@@ -160,7 +160,7 @@ nav .nav-link {
   padding-top: 40px;
   padding-bottom: 40px;
   background: #F5F2F2;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 #footer {
@@ -203,10 +203,10 @@ nav .nav-link {
 }
 
 #header .background-container {
-  background: #000 url(../static/img/stage_bg.gif) no-repeat;
+  background: #000 url(../img/student_working.jpg) no-repeat;
   background-size: cover;
   width: 100%;
-  height: 45vh;
+  height: 50vh;
   background-position: center;
   color: white;
   position: relative;
@@ -223,45 +223,37 @@ nav .nav-link {
   z-index: -1;
 }
 
-#speakers .speaker-container {
-  height: 1000px;
-  background: transparent;
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#speakers .speaker-container .speaker-description {
-  z-index: 2;
-  position: relative;
-  padding-top: 200px;
+.content .position-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-@media (max-width: 766px) and (min-width: 300px) {
-  #speakers #carla {
-    padding-top: 100px;
-    background-position-x: -300px !important;
-  }
-  #speakers #tyler {
-    padding-top: 300px;
-  }
-  #speakers #lauren {
-    padding-top: 10px;
-  }
-  #speakers #chris {
-    padding-top: 250px;
-  }
-  #speakers #josh {
-    padding-top: 100px;
-  }
-  #speakers #jer {
-    padding-top: 100px;
-  }
-  #speakers #gracie {
-    padding-top: 100px;
-  }
-  #speakers #stephen {
-    padding-top: 200px;
-  }
-  #speakers .speaker-container .speaker-description {
-    padding-top: 20px;
-  }
+.content .positions {
+  margin-top: 50px;
 }
-/*# sourceMappingURL=page03_speakers.css.map */
+
+.position-logo {
+  width: 250px;
+  height: 250px;
+}
+
+.position-logo img {
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=page07_opportunities.css.map */

@@ -160,7 +160,7 @@ nav .nav-link {
   padding-top: 40px;
   padding-bottom: 40px;
   background: #F5F2F2;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 #footer {
@@ -216,7 +216,7 @@ body iframe {
 }
 
 #header .background-container {
-  background: #000 url(../static/img/crowd1.webp) no-repeat;
+  background: #000 url(../img/crowd1.webp) no-repeat;
   background-size: cover;
   width: 100%;
   height: 50vh;
@@ -234,14 +234,6 @@ body iframe {
   width: 100%;
   height: 100%;
   z-index: -1;
-}
-
-#introduction {
-  font-size: 1.5rem;
-  text-align: center;
-  background: #F5F2F2;
-  -webkit-box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.75);
 }
 
 .modal-open {
@@ -290,7 +282,7 @@ body iframe {
 }
 
 #summits #events-flex-container #ambassador-visit-img {
-  background: url(../static/img/summits/leaders_forum.jpg);
+  background: url(../img/summits/leaders_forum.jpg);
   background-size: cover;
   height: 400px;
   width: 500px;
@@ -319,17 +311,17 @@ body iframe {
 }
 
 #summits #speaker-container-section #sarah-wells {
-  background: url(../static/img/speakers/vision2020/sarah.gif);
+  background: url(../img/speakers/vision2020/sarah.gif);
   background-position: center;
 }
 
 #summits #speaker-container-section #dillon-mendes {
-  background: url(../static/img/speakers/vision2020/dillon.gif);
+  background: url(../img/speakers/vision2020/dillon.gif);
   background-position: center;
 }
 
 #summits #speaker-container-section #shadille-estepan {
-  background: url(../static/img/speakers/vision2020/shadille.gif);
+  background: url(../img/speakers/vision2020/shadille.gif);
   background-position: center;
 }
 
@@ -401,39 +393,38 @@ body iframe {
 }
 
 #summits #speakers-container .speaker-name-1 {
-  font-family: 'Roboto Slab';
   color: black;
   font-size: 20px;
   padding-top: 155px;
 }
 
 #summits #speakers-container #josh {
-  background: url(../static/img/speakers/vision2020/josh.gif);
+  background: url(../img/speakers/vision2020/josh.gif);
   background-position: center;
 }
 
 #summits #speakers-container #paul {
-  background: url(../static/img/speakers/vision2020/paul.gif);
+  background: url(../img/speakers/vision2020/paul.gif);
   background-position: center;
 }
 
 #summits #speakers-container #carla {
-  background: url(../static/img/speakers/vision2020/carla.gif);
+  background: url(../img/speakers/vision2020/carla.gif);
   background-position: center;
 }
 
 #summits #speakers-container #ty {
-  background: url(../static/img/speakers/vision2020/tyler.gif);
+  background: url(../img/speakers/vision2020/tyler.gif);
   background-position: center;
 }
 
 #summits #speakers-container #lauren {
-  background: url(../static/img/speakers/vision2020/lauren.gif);
+  background: url(../img/speakers/vision2020/lauren.gif);
   background-position: center;
 }
 
 #summits #speakers-container #chris {
-  background: url(../static/img/speakers/vision2020/chris.gif);
+  background: url(../img/speakers/vision2020/chris.gif);
   background-position: center;
 }
 
@@ -489,6 +480,11 @@ body iframe {
 #summits #paul-woida-container .beside-img-container p {
   color: black;
   text-shadow: none;
+}
+
+#past-events {
+  background: url(../img/summits/black_and_white_lake.jpg) center;
+  background-size: cover;
 }
 
 #past-events h1 {
@@ -554,49 +550,49 @@ body iframe {
 }
 
 #past-summits .past-conferences-container #intensive-conference-1 {
-  background: url(../static/img/summits/edmonton1.jpg);
+  background: url(../img/summits/edmonton1.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #past-summits .past-conferences-container #intensive-conference-2 {
-  background: url(../static/img/summits/edmonton2.jpg);
+  background: url(../img/summits/edmonton2.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #past-summits .past-conferences-container #intensive-conference-3 {
-  background: url(../static/img/summits/edmonton3.jpg);
+  background: url(../img/summits/edmonton3.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #past-summits .past-conferences-container #china-1 {
-  background: url(../static/img/summits/schools/hope_international_school.gif);
+  background: url(../img/summits/schools/hope_international_school.gif);
   background-size: cover;
   background-position: center;
 }
 
 #past-summits .past-conferences-container #china-2 {
-  background: url(../static/img/summits/schools/beijing_city_international_school.gif);
+  background: url(../img/summits/schools/beijing_city_international_school.gif);
   background-size: cover;
   background-position: center;
 }
 
 #past-summits .past-conferences-container #china-3 {
-  background: url(../static/img/summits/schools/qingdao_amerasia_international_school.gif);
+  background: url(../img/summits/schools/qingdao_amerasia_international_school.gif);
   background-size: cover;
   background-position: center;
 }
 
 #past-summits .past-conferences-container #china-4 {
-  background: url(../static/img/summits/schools/concordia_international_school.gif);
+  background: url(../img/summits/schools/concordia_international_school.gif);
   background-size: cover;
   background-position: center;
 }
 
 #past-summits .past-conferences-container #china-5 {
-  background: url(../static/img/summits/schools/suzhou_international_school.gif);
+  background: url(../img/summits/schools/suzhou_international_school.gif);
   background-size: cover;
   background-position: center;
 }

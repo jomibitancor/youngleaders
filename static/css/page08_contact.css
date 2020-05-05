@@ -160,7 +160,7 @@ nav .nav-link {
   padding-top: 40px;
   padding-bottom: 40px;
   background: #F5F2F2;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 #footer {
@@ -201,4 +201,95 @@ nav .nav-link {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/*# sourceMappingURL=page00_skeleton.css.map */
+
+#header .background-container {
+  background: #000 url(../img/contact/team_picture.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  color: white;
+  position: relative;
+  z-index: 0;
+  background-attachment: fixed;
+}
+
+#header .background-container .background-overlay {
+  background: black;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#introduction .d-flex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #introduction .d-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+#introduction img {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: black 5px 5px 25px;
+          box-shadow: black 5px 5px 25px;
+}
+
+#introduction p {
+  padding: 25px 25px;
+}
+
+#introduction button {
+  display: block;
+}
+
+#faq {
+  background: whitesmoke;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#faq h2 {
+  font-family: 'Raleway';
+}
+
+#faq p {
+  padding: 0px;
+}
+
+#faq .Q {
+  font-family: 'Raleway';
+  font-size: 30px;
+  font-weight: bold;
+  color: #26b3bf;
+  padding-right: 10px;
+  line-height: 30px;
+}
+
+#faq .A {
+  line-height: 30px;
+  font-family: 'Raleway';
+  font-size: 30px;
+  font-weight: bold;
+  color: #26b3bf;
+  padding-right: 10px;
+}
+/*# sourceMappingURL=page08_contact.css.map */

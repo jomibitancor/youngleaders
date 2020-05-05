@@ -160,7 +160,7 @@ nav .nav-link {
   padding-top: 40px;
   padding-bottom: 40px;
   background: #F5F2F2;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 #footer {
@@ -202,28 +202,24 @@ nav .nav-link {
           flex-direction: column;
 }
 
-#header .background-container {
-  background: #000 url(../static/img/student_working.jpg) no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 50vh;
-  background-position: center;
-  color: white;
-  position: relative;
-  z-index: 0;
+#course-header {
+  background: url(../img/course/laptop.jpg) no-repeat center;
   background-attachment: fixed;
+  background-size: cover;
 }
 
-#header .background-container .background-overlay {
-  background: black;
-  opacity: 0.2;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.page-title {
+  padding-top: 20vh;
+  height: 50vh;
+  color: white;
 }
 
-.content {
+#content {
+  background: #f5f5f5;
+}
+
+.course {
+  padding: 50px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,29 +227,71 @@ nav .nav-link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
-.content .position-type {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media (min-width: 768px) {
+  .course {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
-.content .positions {
-  margin-top: 50px;
-}
-
-.position-logo {
-  width: 250px;
-  height: 250px;
-}
-
-.position-logo img {
+.course .course-img {
   width: 100%;
   height: auto;
 }
-/*# sourceMappingURL=page07_opportunities.css.map */
+
+@media (min-width: 768px) {
+  .course .course-img {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 964px) and (min-width: 769px) {
+  .course .course-img {
+    width: 50%;
+    height: 350px;
+  }
+}
+
+.course .course-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 10px 50px;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+}
+
+.course .course-desc button {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #mindset .course-desc {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #mindset img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+/*# sourceMappingURL=page09_courses.css.map */
