@@ -249,10 +249,8 @@ nav .nav-link {
 }
 
 #v-header .header-container {
-  margin-top: -100px;
   z-index: 1;
   width: 100%;
-  height: 40vh;
 }
 
 #v-header .header-container h1 {
