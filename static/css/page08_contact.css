@@ -163,6 +163,10 @@ nav .nav-link {
   font-size: 1.25rem;
 }
 
+#introduction strong {
+  font-weight: bold;
+}
+
 #footer {
   text-align: center;
   color: white;
