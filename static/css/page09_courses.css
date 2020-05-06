@@ -4,7 +4,7 @@
 }
 
 .roboto {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -155,7 +155,7 @@ nav .nav-link {
 }
 
 #introduction {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -246,6 +246,9 @@ nav .nav-link {
 .course .course-img {
   width: 100%;
   height: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 @media (min-width: 768px) {
@@ -273,25 +276,12 @@ nav .nav-link {
           flex-direction: column;
   text-align: left;
   padding: 10px 50px;
-  -webkit-box-flex: 6;
-      -ms-flex: 6;
-          flex: 6;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .course .course-desc button {
   width: 50%;
-}
-
-@media (max-width: 768px) {
-  #mindset .course-desc {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  #mindset img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
 }
 /*# sourceMappingURL=page09_courses.css.map */

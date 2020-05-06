@@ -4,7 +4,7 @@
 }
 
 .roboto {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -155,7 +155,7 @@ nav .nav-link {
 }
 
 #introduction {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -471,8 +471,8 @@ nav .nav-link {
 }
 
 #partners .container-partners .partner-container {
-  width: 250px;
-  margin: 10px 20px 10px 20px;
+  width: 150px;
+  margin: 10px;
 }
 
 #partners .container-partners .partner-container img {
@@ -506,7 +506,7 @@ nav .nav-link {
 }
 
 #social .instagram-container {
-  width: 70%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }

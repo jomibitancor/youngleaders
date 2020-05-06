@@ -29,6 +29,7 @@
     .course-img{
         width: 100%;
         height: auto;
+        flex: 1;
 
         @media (min-width: 768px){ 
             width: 40vw;
@@ -45,21 +46,10 @@
         flex-direction: column;
         text-align: left;
         padding: 10px 50px;
-        flex: 6;
+        flex: 1;
 
         button{
             width: 50%;
-        }
-    }
-}
-
-#mindset{
-    @media (max-width: 768px){ 
-        .course-desc{
-            order: 2;
-        }
-        img{
-            order: 1;
         }
     }
 }

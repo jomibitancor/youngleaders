@@ -27,11 +27,27 @@
 </header>
 <!--VIDEO END -->
 
+<div class="container-fluid py-5" id="introduction">
+    <div class="container">
+        <p class="roboto"><strong>WELCOME</strong> to <strong>YoungLeaders.World</strong>.</p>
+        <p class="roboto text-left">&emsp; We are an international non-profit organization focused on helping youth get clear on the leadership skills needed to create a great life. We connect and teach through on-line learning, conferences, talks and annual massive summits of student leaders.  Choose the way the best suits you and let’s get to work on creating a better life for you and your community. </p>
+        <div class="row mt-5 align-items-center justify-content-center">
+            <div class="col">
+                <img src="{{url_for('static',filename='img/contact/team_picture.jpg')}}" alt="">
+            </div>
+            <div class="col text-left">
+                <p class="roboto">Our mission is to create an entire generation of young people focused on personal growth and collective good.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- ATTENTION -->
 <div class="pb-5 container-fluid" id="attention">
     <div class="container text-center">
         <img width="1000" height="auto" id="success-series" src="{{ url_for('static', filename='img/main/student_success_phone.jpg') }}" alt="" class="img-fluid mt-5">
-        <h1 class="pt-3 raleway text-center">Click here for 3 free videos to get you motivated and into a routine for success</h1>
+        <h3 class="pt-3 raleway text-center">Click here for 3 free videos to get you motivated and into a routine for success</h3>
         <a href="{{url_for('videoresources')}}">
             <button class="btn btn-primary">
                 <div class="btn-text">CHECK IT OUT</div>
@@ -244,7 +260,7 @@
             </div>
             <div class="partner-container">
                 <a href="http://www.productionworld.ca/" target="_blank">
-                    <img src="{{ url_for('static', filename='img/partners/production_world(1).png') }}" alt="Production World" style="margin-top: 40px;" loading="lazy"> </a>
+                    <img src="{{ url_for('static', filename='img/partners/production_world(1).png') }}" alt="Production World" style="margin-top: 25px;" loading="lazy"> </a>
             </div>
             <div class="partner-container">
                 <a href="http://www.eedc.ca/" target="_blank">

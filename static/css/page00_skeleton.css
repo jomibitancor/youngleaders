@@ -4,7 +4,7 @@
 }
 
 .roboto {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -155,12 +155,16 @@ nav .nav-link {
 }
 
 #introduction {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
   background: #F5F2F2;
   font-size: 1.25rem;
+}
+
+#introduction strong {
+  font-weight: bold;
 }
 
 #footer {
