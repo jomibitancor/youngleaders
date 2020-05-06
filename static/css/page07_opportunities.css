@@ -160,7 +160,11 @@ nav .nav-link {
   padding-top: 40px;
   padding-bottom: 40px;
   background: #F5F2F2;
-  font-size: 1.25rem;
+  font-size: 1rem;
+}
+
+#introduction strong {
+  font-weight: bold;
 }
 
 #footer {
