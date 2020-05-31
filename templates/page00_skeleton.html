@@ -1,38 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <link rel="stylesheet" href="{{url_for('static', filename='page00_skeleton.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='libs/bootstrap.css')}}" >
-    <link rel="stylesheet" href="{{url_for('static', filename='libs/animate.css')}}" />
-    <link rel="stylesheet" href="{{url_for('static', filename='libs/glider.min.css')}}" />
-    <link rel="stylesheet" href="{{url_for('static', filename='libs/swiper.min.css')}}">
-    <script type="text/javascript" src="{{url_for('static', filename='libs/swiper.min.js')}}"></script>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='page00_skeleton.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='libs/bootstrap.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='libs/animate.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='libs/glider.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='libs/swiper.min.css')}}"
+    />
+    <script
+      type="text/javascript"
+      src="{{url_for('static', filename='libs/swiper.min.js')}}"
+    ></script>
     <script src="{{url_for('static', filename='libs/wow.min.js')}}"></script>
-    <script>new WOW().init();</script>
+    <script>
+      new WOW().init();
+    </script>
 
-    <link rel="icon" href="{{url_for('static', filename='img/logos/ylwlogo.png')}}">
+    <link
+      rel="icon"
+      href="{{url_for('static', filename='img/logos/ylwlogo.png')}}"
+    />
 
     <title>{% block title %}{% endblock title %} - YoungLeaders.World</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 2;">
-        <a class="navbar-brand" href="{{url_for('main')}}"><img width="75px" src="{{ url_for('static', filename='img/logos/ylwlogo.png') }}" alt=""></a>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      style="z-index: 2;"
+    >
+      <a class="navbar-brand" href="{{url_for('main')}}"
+        ><img
+          width="75px"
+          src="{{ url_for('static', filename='img/logos/ylwlogo.png') }}"
+          alt=""
+      /></a>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button> -->
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="navbar-nav mx-auto">
-                
-                <a class="nav-item nav-link" href="{{ url_for('events') }}">Events</a>
-                <a class="nav-item nav-link" href="{{ url_for('videoresources') }}">Video Resources</a>
-                <a class="nav-item nav-link" href="{{ url_for('courses') }}">Courses</a>
-                <a class="nav-item nav-link" href="{{ url_for('speakers') }}">Speakers</a>
-                <a class="nav-item nav-link" href="{{ url_for('waystogive') }}">Ways To Give</a>
-                <!-- <li class="nav-item dropdown">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav mx-auto">
+          <a class="nav-item nav-link" href="{{ url_for('events') }}">Events</a>
+          <a
+            class="nav-item nav-link"
+            href="https://youngleaders-world.mykajabi.com/opt-in"
+            >Video Resources</a
+          >
+          <a class="nav-item nav-link" href="{{ url_for('courses') }}"
+            >Courses</a
+          >
+          <a class="nav-item nav-link" href="{{ url_for('speakers') }}"
+            >Speakers</a
+          >
+          <a class="nav-item nav-link" href="{{ url_for('waystogive') }}"
+            >Ways To Give</a
+          >
+          <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       More
                     </a>
@@ -42,77 +85,106 @@
                         <a class="dropdown-item" href="{{ url_for('contact') }}">Contact Us</a>
                     </div>
                 </li> -->
-            </ul>
-        </div>
-        <span class="navbar-toggler-icon" id="nav-toggler"></span>   
-        <div id="mySidenav" class="sidenav">
-            <a href="{{ url_for('about') }}">About Us</a>
-            <a href="{{ url_for('opportunities') }}">Opportunities</a>
-            <a href="{{ url_for('contact') }}">Contact</a>
-        </div>
+        </ul>
+      </div>
+      <span class="navbar-toggler-icon" id="nav-toggler"></span>
+      <div id="mySidenav" class="sidenav">
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('opportunities') }}">Opportunities</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+      </div>
     </nav>
     <!-- NAVBAR END -->
 
-    {% block content %}
-    {% endblock content %}
+    {% block content %} {% endblock content %}
 
-     <!-- FOOTER -->
-     <section id="footer" class="pt-2">
-        <div class="container">
-            <div id="feeter" class="row text-center align-items-center">
-                <div class="col">
-                    <div class="raleway">
-                        YoungLeaders.World <br>
-                        <a style="color: #26B3BF;" href="mailto: info@youngleaders.world">info@youngleaders.world</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex justify-content-center">
-                        <div class="p-2">
-                            <a href="https://www.facebook.com/youngleadersworldtour/" target="_blank">
-                                <img src="{{url_for('static', filename='img/logos/fb1.png')}}" alt="" class="logo">
-                            </a>
-                        </div>
-                        <div class="p-2">
-                            <a href="https://www.instagram.com/youngleaders.world/" target="_blank">
-                                <img src="{{url_for('static', filename='img/logos/ig1.png')}}" alt="" class="logo">
-                            </a>
-                        </div>
-                        <div class="p-2">
-                            <a href="https://twitter.com/ylworld" target="_blank">
-                                <img src="{{url_for('static', filename='img/logos/tw1.png')}}" alt="" class="logo">
-                            </a>
-                        </div>
-                        <div class="p-2">
-                            <a href="https://www.youtube.com/channel/UCi-93YXlo7oBYf7jj6T9lvg" target="_blank">
-                                <img src="{{url_for('static', filename='img/logos/yt1.png')}}" alt="" class="logo">
-                            </a>
-                        </div>
-                    </div>
-                    <p class="text-muted" id="icons8">Icons by <a target="_blank" href="https://icons8.com/">Icons8</a> </p>
-                </div>
-                <div class="col raleway">
-                    For Growth & Good.
-                </div>
+    <!-- FOOTER -->
+    <section id="footer" class="pt-2">
+      <div class="container">
+        <div id="feeter" class="row text-center align-items-center">
+          <div class="col">
+            <div class="raleway">
+              YoungLeaders.World <br />
+              <a style="color: #26b3bf;" href="mailto: info@youngleaders.world"
+                >info@youngleaders.world</a
+              >
             </div>
-
-            <div class="row text-center pt-2">
-                <div class="col">
-                    <p class="text-muted">
-                        &copy; 2019 YoungLeaders.World
-                    </p>
-                </div>
+          </div>
+          <div class="col">
+            <div class="d-flex justify-content-center">
+              <div class="p-2">
+                <a
+                  href="https://www.facebook.com/youngleadersworldtour/"
+                  target="_blank"
+                >
+                  <img
+                    src="{{url_for('static', filename='img/logos/fb1.png')}}"
+                    alt=""
+                    class="logo"
+                  />
+                </a>
+              </div>
+              <div class="p-2">
+                <a
+                  href="https://www.instagram.com/youngleaders.world/"
+                  target="_blank"
+                >
+                  <img
+                    src="{{url_for('static', filename='img/logos/ig1.png')}}"
+                    alt=""
+                    class="logo"
+                  />
+                </a>
+              </div>
+              <div class="p-2">
+                <a
+                  href="https://www.youtube.com/channel/UCi-93YXlo7oBYf7jj6T9lvg"
+                  target="_blank"
+                >
+                  <img
+                    src="{{url_for('static', filename='img/logos/yt1.png')}}"
+                    alt=""
+                    class="logo"
+                  />
+                </a>
+              </div>
             </div>
+            <p class="text-muted" id="icons8">
+              Icons by <a target="_blank" href="https://icons8.com/">Icons8</a>
+            </p>
+          </div>
+          <div class="col raleway">
+            For Growth & Good.
+          </div>
         </div>
+
+        <div class="row text-center pt-2">
+          <div class="col">
+            <p class="text-muted">
+              &copy; 2019 YoungLeaders.World
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- FOOTER(END) -->
 
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="{{url_for('static', filename='js/main.js')}}"></script>
-
-</body>
+  </body>
 </html>
