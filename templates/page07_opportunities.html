@@ -1,57 +1,114 @@
-{% extends "page00_skeleton.html" %}
-{% block title %}Opportunities{% endblock title %}
-
-{% block content %}
-<link rel="stylesheet" href="{{url_for('static',filename='css/page07_opportunities.css')}}" />
+{% extends "page00_skeleton.html" %} {% block title %}Opportunities{% endblock
+title %} {% block content %}
+<link
+  rel="stylesheet"
+  href="{{url_for('static',filename='css/page07_opportunities.css')}}"
+/>
 
 <!-- HEADER -->
 <section id="header">
-    <div class="background-container d-flex justify-content-center align-items-center">
+  <div
+    class="background-container d-flex justify-content-center align-items-center"
+  >
     <h1 class="page-title">OPPORTUNITIES</h1>
     <div class="background-overlay"></div>
-    </div>
+  </div>
 </section>
 <!-- HEADER (END) -->
 
 <!-- INTRODUCTION -->
 <section id="introduction">
-    <div class="container py-4">
-        <div class="row">
-            <div class="col">
-                <p>
-                    We love when <strong>leadership</strong> and <strong>passion</strong>  come together
-                </p>
-            </div>
-        </div>
+  <div class="container py-4">
+    <div class="row">
+      <div class="col">
+        <h5 style="display: inline;">We love when</h5>
+        <p style="display: inline;">
+          <strong>leadership</strong> and <strong>passion</strong> come together
+        </p>
+      </div>
     </div>
+  </div>
 </section>
 <!-- INTRODUCTION -->
 
 <section class="py-5 container-fluid">
-    <div class="container content">
-        <div class="position-type">
-            <h1 class="raleway">Volunteer Positions</h1>
-            <p class="roboto">The following are volunteer opportunities that are available with organizations that we are aligned with:</p>
-            
-            <div class="positions row align-items-center">
-                <div class="position-logo col-3">
-                    <img src="{{url_for('static', filename='img/logos/ylwlogo.png')}}" alt="">
-                </div>
-                <div class="position-description col">
-                    <h2 class="raleway position-title">YL.W Student Internship</h2>
-                    <p class="roboto position-details">Youngleaders.World opens up internship opportunities to students in high school in the Edmonton Area. If you have a desire to learn more about leadership, be mentored by some of the leading voices in youth leadership in Canada and have a good work ethic, please apply here.  Applications open May 4 - 24, 2020.</p>
-                    <p class="roboto text-muted font-italic">Please note that teacher reference is required so please give yourself at least a few days to apply</p>
-                    <a target="_blank" href="{{url_for('static', filename='docs/ylwinternship.pdf')}}" class="btn btn-primary">INTERN APPLICATION</a>
-                </div>
-                <div class="col">
-                    <p class="roboto">"YoungLeaders.World showed me what it is like to be working along side an incredibly passionate group of people that has a very hopeful mission for the greater good. YLW has taught me skills that will carry me through all aspects of my life, and help me achieve all my goals." - <strong>Riti Shah</strong> </p>
-                </div>
-            </div>
-        </div>        
+  <div class="container content">
+    <div class="position-type">
+      <h1 class="raleway">Volunteer Positions</h1>
+      <p class="roboto">
+        The following are volunteer opportunities that are available with
+        organizations that we are aligned with:
+      </p>
+
+      <div class="row">
+        <div class="col-lg"></div>
+        <div class="col-lg-7">
+          <img
+            src="{{url_for('static', filename='img/summits/leaders_forum.jpg')}}"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-lg"></div>
+      </div>
+
+      <div class="positions row align-items-center">
+        <div class="position-logo col-3">
+          <img
+            src="{{url_for('static', filename='img/logos/ylwlogo.png')}}"
+            alt=""
+          />
+        </div>
+        <div class="position-description col">
+          <h2 class="raleway position-title">YL.W Student Internship</h2>
+          <p class="roboto position-details">
+            Youngleaders.World opens up internship opportunities to students in
+            high school in the Edmonton Area. If you have a desire to learn more
+            about leadership, be mentored by some of the leading voices in youth
+            leadership in Canada and have a good work ethic, please apply here.
+          </p>
+          <p class="raleway">
+            <strong>
+              Intern opportunities for the 2020-21 school year are now closed.
+              Next intake is April 2021.
+            </strong>
+          </p>
+        </div>
+        <div class="col">
+          <p class="roboto">
+            <i>
+              "YoungLeaders.World showed me what it is like to be working along
+              side an incredibly passionate group of people that has a very
+              hopeful mission for the greater good. YLW has taught me skills
+              that will carry me through all aspects of my life, and help me
+              achieve all my goals." - <strong>Riti Shah</strong>
+            </i>
+          </p>
+        </div>
+      </div>
+
+      <div class="row pt-4">
+        <div class="col">
+          <p class="raleway">
+            YoungLeaders.World is proud to work with the Peter Lougheed
+            Leadership College on the University of Alberta Campus. All
+            successful YLW interns are recommended to the college for an
+            automatic acceptance. *Students must complete their first year of
+            studies at the University of Alberta.
+          </p>
+        </div>
+        <div class="col-3">
+          <img
+            src="{{url_for('static', filename='img/partners/uofapllc.png')}}"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <div class="py-5"></div>
-
 
 {% endblock content %}
