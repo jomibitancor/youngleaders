@@ -66,14 +66,27 @@
         <img
           src="{{url_for('static',filename='img/main/team_picture_ground.jpg')}}"
           alt=""
-          class="img-fluid"
+          class="img-fluid rounded"
         />
       </div>
       <div class="col-lg text-left">
-        <p class="roboto">
+        <h3 class="raleway">
           Our mission is to create an entire generation of young people focused
           on personal growth and collective good.
-        </p>
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="attention-banner">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h1 class="raleway">
+          We believe that leadership is a mindset, not a status. We want to help
+          you THINK like a leader.
+        </h1>
       </div>
     </div>
   </div>
@@ -83,25 +96,16 @@
 <div class="py-5 container-fluid" id="attention">
   <div class="container text-center">
     <div class="row">
-      <div class="col text-center raleway">
-        <h1>
-          We believe that leadership is a mindset, not a status. We want to help
-          you THINK like a leader.
-        </h1>
-        <hr class="my-3" />
-      </div>
-    </div>
-    <div class="row pb-5">
-      <p class="col roboto text-center">
+      <h3 class="col roboto text-center">
         We invite you to connect with us the way that works best for you.
-      </p>
+      </h3>
     </div>
     <div class="row py-5">
       <div class="col-lg">
         <img
           src="{{ url_for('static', filename='img/main/1summits_conference.jpg') }}"
           alt=""
-          class="img-fluid"
+          class="img-fluid rounded"
         />
       </div>
       <div class="col-lg d-flex justify-content-center flex-column">
@@ -125,7 +129,7 @@
         <img
           src="{{ url_for('static', filename='img/main/2personal_leadership_courses.jpg') }}"
           alt=""
-          class="img-fluid"
+          class="img-fluid rounded"
         />
       </div>
       <div class="col-lg d-flex justify-content-center flex-column">
@@ -150,7 +154,7 @@
         <img
           src="{{ url_for('static', filename='img/main/3school_assemblies.jpg') }}"
           alt=""
-          class="img-fluid"
+          class="img-fluid rounded"
         />
       </div>
       <div class="col-lg d-flex justify-content-center flex-column">
@@ -307,6 +311,7 @@
           src="{{ url_for('static', filename='img/main/4international_development.jpg') }}"
           alt=""
           class="img-fluid"
+          style="border-radius: 0.75rem !important;"
         />
       </div>
       <div class="col-lg d-flex justify-content-center flex-column">
@@ -327,7 +332,7 @@
         <img
           src="{{ url_for('static', filename='img/main/5free_video_resources.jpg') }}"
           alt=""
-          class="img-fluid"
+          class="img-fluid rounded"
         />
       </div>
       <div class="col-lg d-flex justify-content-center flex-column">

@@ -6,7 +6,7 @@ if (window.innerWidth < 994) {
   mySidenav.innerHTML = `
         <a href="/events">Events</a>
         <a href="https://youngleaders-world.mykajabi.com/opt-in">Video Resources</a>
-        <a href="/courses">Courses</a>
+        <a href="https://youngleaders-world.mykajabi.com/personal-leadership-courses">Courses</a>
         <a href="/speakers">Speakers</a>
         <a href="/waystogive">Ways To Give</a>
         <a href="/about">About Us</a>

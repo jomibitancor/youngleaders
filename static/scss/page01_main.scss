@@ -75,6 +75,19 @@ $gray-background: #f5f5f5;
   }
 }
 
+#attention-banner {
+  background: $primary;
+  color: white;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+
+  @media (max-width: 765px) {
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+}
+
 #attention {
   display: flex;
   flex-direction: column;

@@ -284,6 +284,19 @@ nav .nav-link {
   text-decoration: underline;
 }
 
+#attention-banner {
+  background: #26b3bf;
+  color: white;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+@media (max-width: 765px) {
+  #attention-banner h1 {
+    font-size: 1.7rem;
+  }
+}
+
 #attention {
   display: -webkit-box;
   display: -ms-flexbox;
